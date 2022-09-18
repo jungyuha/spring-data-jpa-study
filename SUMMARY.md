@@ -2,5 +2,5 @@
 
 ## 스프링 데이터 Common
 
-* [스프링 데이터 Common 4. 쿼리 만들기](README.md)
-  * [스프링 데이터 Common 4. 쿼리 작성해보기](common/common-4./common-4..md)
+* [스프링 데이터 Common 1. 리포지토리](README.md)
+* [스프링 데이터 Common 4. 쿼리 만들기](common/common-4..md)
