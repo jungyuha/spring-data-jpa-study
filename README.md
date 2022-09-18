@@ -70,21 +70,3 @@ Native SQL로 작성할 땐 **nativeQuery = true** 를 추가한다.&#x20;
 &#x20;3가지 속성을 확인할 수 있다.
 
 <figure><img src="https://velog.velcdn.com/images/yooha9621/post/3dbbbfa4-37ec-43b3-b1aa-5187c7a4463b/image.png" alt=""><figcaption><p><strong>QueryLookupStrategy</strong></p></figcaption></figure>
-
-## Use Case Subject
-
-To create an Use Case Subject:
-
-1. Select **Use Case Subject** in **Toolbox**.
-2. Drag on the diagram as the size of Use Case Subject.
-
-You can use **QuickEdit** for Model Element (See [Model Element](broken-reference)).
-
-## Use Case Subject
-
-To create an Use Case Subject:
-
-1. Select **Use Case Subject** in **Toolbox**.
-2. Drag on the diagram as the size of Use Case Subject.
-
-You can use **QuickEdit** for Model Element (See [Model Element](broken-reference)).
