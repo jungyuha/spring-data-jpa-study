@@ -1,72 +1,52 @@
 ---
-description: 스프링 데이터 Common 4. 쿼리 만들기
+description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
 ---
 
-# 스프링 데이터 Common 4. 쿼리 만들기
+# 스프링 데이터 Common 4. 쿼리 작성해보기
 
-## **\[1] 메소드 이름을 분석해서 쿼리 만들기 (CREATE)**
+기타&#x20;
 
-Spring Data Jpa가 메서드 이름을 분석해서 쿼리를 직접 만든다.
+* author : jung yuha
+* last modified : 2022-09-18 Sun&#x20;
 
-<figure><img src="https://velog.velcdn.com/images/yooha9621/post/8e0c182b-32a7-40e9-bbe6-8cd413cb0929/image.png" alt=""><figcaption><p>create 방식 예</p></figcaption></figure>
+## \[1] 기존 Spring Data Jpa를 통한 레포지토리 작성 방법
 
-### 쿼리 만드는 방법
+*   JpaRepository를 상속받아 레포지토리를 만들었다.
 
-**리턴타입 {접두어}{도입부}By{프로퍼티 표현식}(조건식)\[(And|Or){프로퍼티 표현식}(조건식)]{정렬 조건} (매개변수)**
+    <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p> JpaRepository를 상속받은 모습</p></figcaption></figure>
 
-|          |                                                                     |
-| -------- | ------------------------------------------------------------------- |
-| 접두어      | **Find, Get, Query, Count, ...**                                    |
-| 도입부      | **Distinct, First(N), Top(N)**                                      |
-| 프로퍼티 표현식 | **Person.Address.ZipCode => find(Person)ByAddress\_ZipCode(...)**   |
-| 조건식      | **IgnoreCase, Between, LessThan, GreaterThan, Like, Contains, ...** |
-| 정렬 조건    | **OrderBy{프로퍼티}Asc\|Desc**                                          |
-| 리턴 타입    | **E, Optional\<E>, List\<E>, Page\<E>, Slice\<E>, Stream\<E>**      |
-| 매개변수     | **Pageable, Sort**                                                  |
+### 1) JpaRepository
 
-<figure><img src="https://velog.velcdn.com/images/yooha9621/post/940e49cf-068c-4d26-bbc0-b4d31584380e/image.png" alt=""><figcaption><p>comment 엔티티 예시</p></figcaption></figure>
+* JpaRepository는 스프링 데이터 Jpa가 제공하는 인터페이스이다.
 
-<figure><img src="https://velog.velcdn.com/images/yooha9621/post/a5e25271-e059-4880-be06-21d9171d10bb/image.png" alt=""><figcaption><p>create 방식 예시</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p> JpaRepository는 스프링 데이터 Jpa가 제공하는 인터페이스</p></figcaption></figure>
 
-## \[2] 미리 정의해 둔 쿼리 찾아 사용하기(USE\_DECLARED\_QUERY)
 
-### JPQL로 작성하기&#x20;
 
-<figure><img src="https://velog.velcdn.com/images/yooha9621/post/f9521c33-ffc1-4a71-982a-89132b481a2c/image.png" alt=""><figcaption><p>JPQL 사용 예시</p></figcaption></figure>
+*   JpaRepository는 PagingAndSortingRepository 인터페이스를 상속받는다.&#x20;
 
-### Native SQL로 작성하기
+    <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p> PagingAndSortingRepository 인터페이스를 상속받은 모습</p></figcaption></figure>
 
-Native SQL로 작성할 땐 **nativeQuery = true** 를 추가한다.&#x20;
+### 2) PagingAndSortingRepository
 
-<figure><img src="https://velog.velcdn.com/images/yooha9621/post/f2e01f7b-499e-40b6-800b-fa55fb518524/image.png" alt=""><figcaption><p>nativeQuery 사용 예시</p></figcaption></figure>
+* **PagingAndSortingRepository** 인터페이스부터가 **스프링 데이터 Common**에 속하는 시작점이다.
+* 페이징과 Sorting(정렬)을 지원하는 메서드가 있다.
+*   기본적인 CRUD 기능을 가진 **CrudRepository** 인터페이스를 상속받는다.
 
-Native SQL로 작성할 땐 **nativeQuery = true** 를 추가한다.&#x20;
+    <figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption><p><strong>CrudRepository</strong> 인터페이스를 상속받은 모습</p></figcaption></figure>
 
-#### 사용하는 이유
+### 3) **CrudRepository**
 
-* 메소드 이름으로 쿼리를 표현하기 힘든 경우에 사용한다.
-* 저장소 기술에 따라 다르다.
-  * JPA: **@Query** , **@NamedQuery** 사용하는 이유
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p> <strong>CrudRepository</strong></p></figcaption></figure>
 
-### **@Query 어노테이션이 먼저 적용되는 원리**
+* 실질적으로 기능을 구현하고 있지 않는 단순한 마커 인터페이스인 Repository를 상속받는다.
+* 가장 기본적인 CRUD 기능들을 지원한다.
+  * save :&#x20;
+* **@NoRepositoryBean** 어노테이션이 달려있다.
+  * 단순한 마커 인터페이스인 Repository를 상속받았기 때문에 spring data jpa의 여러 레포지토리가 실제 빈을 생성하는 것을 방지하기 위함이다.
+  * 즉 , 실제 레파지토리가 아님을 표시하기 위한 수단인 것이다.
+  *   따라서 중간단계의 레파지토리에는 모두 @NoRepositoryBean 어노테이션이 달려있다.
 
-1. **QueryLookupStrategy** 인터페이스에 정의되어있는 **USE\_DECLARED\_QUERY**
+      <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p> NoRepositoryBean 어노테이션이 달려있는 JpaRepository</p></figcaption></figure>
 
-![USE\_DECLARED\_QUERY](https://velog.velcdn.com/images/yooha9621/post/29dd7233-5727-4528-81ca-3374849ef0ba/image.png)
-
-2\. **JpaQueryLookupStrategy.java**  에 **fromQueryAnnotation**이라는 이름으로 맨 첫번째 우선순위 설정이 되어있다.
-
-![fromQueryAnnotation](https://velog.velcdn.com/images/yooha9621/post/bd27cb79-3a9e-4a2d-8c8e-579ced287381/image.png)
-
-## \[3] 미리 정의한 쿼리 찾아보고 없으면 만들기 (CREATE\_IF\_NOT\_FOUND)
-
-* 기본값이다.
-* 첫 번째 방법과 두 번째 방법을 혼합한 것이다.
-* 메서드 명을 통해 먼저 적절한 쿼리를 찾고 없는 경우 미리 정의해 둔 쿼리를 찾아 사용한다.
-* **@EnableJpaRepositories**의 **QueryLookupStrategy**의 속성을 통해 설정이 가능하다.
-
-![QueryLookupStrategy](https://velog.velcdn.com/images/yooha9621/post/2890e9c2-9bdc-4037-9a90-1fdd46ae9eab/image.png)
-
-&#x20;3가지 속성을 확인할 수 있다.
-
-<figure><img src="https://velog.velcdn.com/images/yooha9621/post/3dbbbfa4-37ec-43b3-b1aa-5187c7a4463b/image.png" alt=""><figcaption><p><strong>QueryLookupStrategy</strong></p></figcaption></figure>
+      <figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p> @NoRepositoryBean 어노테이션이 달려있는 PagingAndSortingRepository</p></figcaption></figure>
