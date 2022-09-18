@@ -46,12 +46,30 @@ Native SQL로 작성할 땐 **nativeQuery = true** 를 추가한다.&#x20;
 
 * 메소드 이름으로 쿼리를 표현하기 힘든 경우에 사용한다.
 * 저장소 기술에 따라 다르다.
-  * JPA: **@Query** , **@NamedQuery**
+  * JPA: **@Query** , **@NamedQuery** 사용하는 이유
 
-1. Seect **Use Case Subject** in **Toolㄹㅇㄹbox**.
-2. Drag on the diagram as the size of Use Case Subject.&#x20;
+### **@Query 어노테이션이 먼저 적용되는 원리**
 
-You can use **QuickEdit** for Model Element (See [Model Element](broken-reference)).
+1. **QueryLookupStrategy** 인터페이스에 정의되어있는 **USE\_DECLARED\_QUERY**
+
+![USE\_DECLARED\_QUERY](https://velog.velcdn.com/images/yooha9621/post/29dd7233-5727-4528-81ca-3374849ef0ba/image.png)
+
+2\. **JpaQueryLookupStrategy.java**  에 **fromQueryAnnotation**이라는 이름으로 맨 첫번째 우선순위 설정이 되어있다.
+
+![fromQueryAnnotation](https://velog.velcdn.com/images/yooha9621/post/bd27cb79-3a9e-4a2d-8c8e-579ced287381/image.png)
+
+## \[3] 미리 정의한 쿼리 찾아보고 없으면 만들기 (CREATE\_IF\_NOT\_FOUND)
+
+* 기본값이다.
+* 첫 번째 방법과 두 번째 방법을 혼합한 것이다.
+* 메서드 명을 통해 먼저 적절한 쿼리를 찾고 없는 경우 미리 정의해 둔 쿼리를 찾아 사용한다.
+* **@EnableJpaRepositories**의 **QueryLookupStrategy**의 속성을 통해 설정이 가능하다.
+
+![QueryLookupStrategy](https://velog.velcdn.com/images/yooha9621/post/2890e9c2-9bdc-4037-9a90-1fdd46ae9eab/image.png)
+
+&#x20;3가지 속성을 확인할 수 있다.
+
+<figure><img src="https://velog.velcdn.com/images/yooha9621/post/3dbbbfa4-37ec-43b3-b1aa-5187c7a4463b/image.png" alt=""><figcaption><p><strong>QueryLookupStrategy</strong></p></figcaption></figure>
 
 ## Use Case Subject
 
