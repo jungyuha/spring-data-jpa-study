@@ -19,13 +19,13 @@ description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
 
 * JpaRepository는 스프링 데이터 Jpa가 제공하는 인터페이스이다.
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption><p> JpaRepository는 스프링 데이터 Jpa가 제공하는 인터페이스</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p> JpaRepository는 스프링 데이터 Jpa가 제공하는 인터페이스</p></figcaption></figure>
 
 
 
 *   JpaRepository는 PagingAndSortingRepository 인터페이스를 상속받는다.&#x20;
 
-    <figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p> PagingAndSortingRepository 인터페이스를 상속받은 모습</p></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p> PagingAndSortingRepository 인터페이스를 상속받은 모습</p></figcaption></figure>
 
 ### 2) PagingAndSortingRepository
 
@@ -33,11 +33,11 @@ description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
 * 페이징과 Sorting(정렬)을 지원하는 메서드가 있다.
 *   기본적인 CRUD 기능을 가진 **CrudRepository** 인터페이스를 상속받는다.
 
-    <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p><strong>CrudRepository</strong> 인터페이스를 상속받은 모습</p></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (2) (2).png" alt=""><figcaption><p><strong>CrudRepository</strong> 인터페이스를 상속받은 모습</p></figcaption></figure>
 
 ### 3) **CrudRepository**
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p> <strong>CrudRepository</strong></p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption><p> <strong>CrudRepository</strong></p></figcaption></figure>
 
 * 실질적으로 기능을 구현하고 있지 않는 단순한 마커 인터페이스인 Repository를 상속받는다.
 * 가장 기본적인 CRUD 기능들을 지원한다.
