@@ -56,4 +56,4 @@ description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
 
       <figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption><p> NoRepositoryBean 어노테이션이 달려있는 JpaRepository</p></figcaption></figure>
 
-      <figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption><p> @NoRepositoryBean 어노테이션이 달려있는 PagingAndSortingRepository</p></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption><p> @NoRepositoryBean 어노테이션이 달려있는 PagingAndSortingRepository</p></figcaption></figure>

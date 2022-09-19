@@ -50,7 +50,7 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 
 ### 3) CRUD 테스트 코드 작성 2 : findAll
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p> findAll 테스트 코</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p> findAll 테스트 코</p></figcaption></figure>
 
 #### 테스트 결과 : 모든 데이터가 반환된다.
 
@@ -69,7 +69,7 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 
 ### 5) **메소드 이름을 분석해서 만든 쿼리**  테스트 코드 작성 1
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p> Jpa Repository 인터페이스에서 구현한 커스텀한 메서드</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p> Jpa Repository 인터페이스에서 구현한 커스텀한 메서드</p></figcaption></figure>
 
 * Jpa Repository 인터페이스에서 구현한 커스텀한 메서드도 추가할 수 있다.
 * 이 예시는 특정한 키워드를 가지고 있는 Post의 목록을 페이징해서 찾는 메서드이다.
@@ -80,13 +80,13 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 Page<Post> page = postRepository.findByTitleContains("spring",PageRequest.of(0,10);
 ```
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p> postRepository.findByTitleContains 테스트 코드 </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p> postRepository.findByTitleContains 테스트 코드 </p></figcaption></figure>
 
 #### 테스트 결과
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p> select 쿼리 실행</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p> 바인드 변수값 확인하기</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p> 바인드 변수값 확인하기</p></figcaption></figure>
 
 
 
