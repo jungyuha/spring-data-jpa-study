@@ -14,7 +14,7 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 
 * **InMemory 데이터베이스**로 H2 데이터베이스를 pom.xml에 추가한다.
 
-<figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## \[2] 테스트 파일 생성
 
@@ -38,7 +38,7 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 1. 저장할 엔티티(인스턴스)를 생성한다.
 2. 생성한 엔티티를 저장한다.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p> CRUD 테스트 코드 작성 1 : save</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p> CRUD 테스트 코드 작성 1 : save</p></figcaption></figure>
 
 #### 테스트 결과 : 발급된 Id는 반환되지만 실제로 Insert는 되지 않는다.
 
@@ -50,13 +50,13 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 
 ### 3) CRUD 테스트 코드 작성 2 : findAll
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p> findAll 테스트 코</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p> findAll 테스트 코</p></figcaption></figure>
 
 #### 테스트 결과 : 모든 데이터가 반환된다.
 
 ### 4) pagingAndSortingRepository 테스트 코드 작성 1 : findAll (Pageable)
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p> pagingAndSortingRepository의 findAll (Pageable)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p> pagingAndSortingRepository의 findAll (Pageable)</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p> findAll (Pageable) 테스트 코드</p></figcaption></figure>
 
@@ -80,7 +80,7 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 Page<Post> page = postRepository.findByTitleContains("spring",PageRequest.of(0,10);
 ```
 
-<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p> postRepository.findByTitleContains 테스트 코드 </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption><p> postRepository.findByTitleContains 테스트 코드 </p></figcaption></figure>
 
 #### 테스트 결과
 

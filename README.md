@@ -25,7 +25,7 @@ description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
 
 *   JpaRepository는 PagingAndSortingRepository 인터페이스를 상속받는다.&#x20;
 
-    <figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p> PagingAndSortingRepository 인터페이스를 상속받은 모습</p></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p> PagingAndSortingRepository 인터페이스를 상속받은 모습</p></figcaption></figure>
 
 ### 2) PagingAndSortingRepository
 
@@ -37,7 +37,7 @@ description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
 
 ### 3) **CrudRepository**
 
-<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption><p> <strong>CrudRepository</strong></p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p> <strong>CrudRepository</strong></p></figcaption></figure>
 
 * 실질적으로 기능을 구현하고 있지 않는 단순한 마커 인터페이스인 Repository를 상속받는다.
 * 가장 기본적인 CRUD 기능들을 지원한다.
@@ -54,6 +54,6 @@ description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
   * 즉 , 실제 레파지토리가 아님을 표시하기 위한 수단인 것이다.
   *   따라서 중간단계의 레파지토리에는 모두 @NoRepositoryBean 어노테이션이 달려있다.
 
-      <figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption><p> NoRepositoryBean 어노테이션이 달려있는 JpaRepository</p></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p> NoRepositoryBean 어노테이션이 달려있는 JpaRepository</p></figcaption></figure>
 
       <figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption><p> @NoRepositoryBean 어노테이션이 달려있는 PagingAndSortingRepository</p></figcaption></figure>
