@@ -4,11 +4,13 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 
 # 스프링 데이터 Common 1. 리포지토리 테스트 코드 만들기
 
-기록&#x20;
+**기록 ✍️**&#x20;
 
-* author : jung yuha
-* first Regist : 2022-09-16 , Sun
-* last modified : 2022-09-17 , Mon
+#### author : jung yuha
+
+#### first registered : 2022-09-16  Sun
+
+#### last modified : 2022-09-17  Mon
 
 ## \[1] H2 데이터베이스 의존성 추가
 

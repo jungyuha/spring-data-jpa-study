@@ -4,12 +4,13 @@ description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
 
 # 스프링 데이터 Common 1. 리포지토리
 
-기타&#x20;
+**기록 ✍️**
 
-* author : jung yuha
-* last modified : 2022-09-18 Sun&#x20;
+#### author : jung yuha
 
-## \[1] 기존 Spring Data Jpa를 통한 레포지토리 작성 방법
+#### last modified : 2022-09-18 Sun
+
+## \[1] 기존 Spring Data Jpa 통한 레포지토리 작성 방법
 
 *   JpaRepository를 상속받아 레포지토리를 만들었다.
 

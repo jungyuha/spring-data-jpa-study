@@ -4,6 +4,14 @@ description: 스프링 데이터 Common 4. 쿼리 만들기
 
 # 스프링 데이터 Common 4. 쿼리 만들기
 
+**기록 ✍️**
+
+#### author : jung yuha
+
+#### first registered : 2022-09-20 Tue
+
+#### last modified : 2022-09-21 Wed
+
 ## **\[1] 메서드 이름으로 쿼리 메서드 만들기 (CREATE)**
 
 Spring Data Jpa가 메서드 이름을 분석해서 쿼리를 직접 만든다.

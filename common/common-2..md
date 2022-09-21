@@ -4,15 +4,13 @@ description: Repository를 색다른 방법으로 정의해보기
 
 # 스프링 데이터 Common 2. 인터페이스 정의하기
 
-#### \[기록]
+**기록 ✍️**
 
 #### author : jung yuha
 
-#### first regist : 2022-09-19 Mon
+#### first registered : 2022-09-19 Mon
 
-#### last modified : 2022-09-Mon
-
-출처 : 인프런 백기선 멘토님 JPA 강의
+#### last modified : 2022-09-19 Mon
 
 ## \[1] 기존 Repository 작성 방법
 

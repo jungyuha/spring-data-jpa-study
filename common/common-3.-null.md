@@ -4,15 +4,13 @@ description: 스프링 데이터 Common이 지원하는 Null 처리 방법
 
 # 스프링 데이터 Common 3. Null 처리
 
-\[기록]
+**기록 ✍️**
 
 #### author : jung yuha
 
-#### first regist : 2022-09-20 Tue
+#### first registered : 2022-09-20 Tue
 
 #### last modified : 2022-09-20 Tue
-
-컨텐츠 출처 : 인프런 백기선 멘토님의 JPA 강의
 
 ## \[1] Optional을 이용한 Null처리(자바 8이상)
 
