@@ -90,7 +90,7 @@ Native SQL로 작성할 땐 **nativeQuery = true** 를 추가한다.&#x20;
 
       * Page타입을 받고 싶으면 매개변수로 Pageable 파라미터를 줘야한다.
 
-      <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (7) (3).png" alt=""><figcaption></figcaption></figure>
 
       * 이 때 반환 객체가 Page가 아니라 List로 설정하면 페이징이 되지 않는다.
       * Pageable 타입에는 Sorting (정렬) 기능도 포함되어 있다.
@@ -121,23 +121,80 @@ Native SQL로 작성할 땐 **nativeQuery = true** 를 추가한다.&#x20;
 
 ### 1. 기본 실습
 
-#### 특정 키워드를 가진 Comment 데이터 조회하기
+#### **\[ 쿼리 메서드 예시 1]**   특정 키워드를 가진 Comment 데이터 조회
 
-*   **쿼리 메서드 1** : `List<Comment> findByCommentContains(String keyword);`
+```java
+List<Comment> findByCommentContains(String keyword);
+```
 
-    <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
-*   **테스트 1 : 이 때 리스트에 값이 없는 경우 널이 나오지 않고 Empty로 나온다.**
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p><strong>쿼리 메서드</strong> </p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
-* **쿼리 메서드 2** : `List<Comment> findByCommentContainsIgnoreCaseAndLikeCountGreaterThan(String keyword,Integer likeCount);`
-*   **테스트 2**
+<figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
-*   **테스트2 결과 쿼리**
+**이 때 리스트에 값이 없는 경우 널이 나오지 않고 Empty로 나온다.**
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-* **쿼리 메서드 3** : `List<Comment> findByCommentContainsIgnoreCaseOrderByLikeCountDesc(String keyword);`
-* **테스트 3**&#x20;
-  *
-* ㅇ
-*
+#### **\[ 쿼리 메서드 예시 2]   대소문자 구분없이** 특정 키워드를 가지며 likeCount가 일정수 이상인 Comment 데이터 조회
+
+```java
+List<Comment> findByCommentContainsIgnoreCaseAndLikeCountGreaterThan(String keyword,Integer likeCount);
+```
+
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p><strong>쿼리 메서드</strong></p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
+
+
+
+#### **\[ 쿼리 메서드 예시 3]   대소문자 구분없이** 특정 키워드를 가지며 likeCount로 내림차순 정렬한  Comment 데이터 조회
+
+```java
+List<Comment> findByCommentContainsIgnoreCaseOrderByLikeCountDesc(String keyword);
+```
+
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p><strong>쿼리 메서드</strong></p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>테스트</p></figcaption></figure>
+
+#### **\[ 쿼리 메서드 예시 4]   대소문자 구분없이** 특정 키워드를 가지며 페이징 처리한  Comment 데이터 조회
+
+```java
+Page<Comment> findByCommentContainsIgnoreCase(String keyword , Pageable pageable);
+```
+
+**테스트 코드**
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
+
+```java
+PageRequest pageRequest = pageRequest.of(0,10,Sort.by(Sort.Direction.DESC,LikeCount));
+Page<Comment> findByCommentContainsIgnoreCase("Spring" , pageRequest); 
+```
+
+* **PageRequest 타입**으로 반환하는데 PageRequest는 일종의 페이지 타입이다.
+* Pagerequest 타입은 static한 세 가지 타입을 지원한다.
+  *   **page , size**를 제공하는 타입&#x20;
+
+      <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+  *   **page , size , sort**를 제공하는 타입
+
+
+
+      <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+  *   **page , size , 정렬하는 direction , 정렬하는 properties**를 제공하는 타입
+
+      <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+* Page 타입의 **getNumberOfElements()** 메서드는 현재 가지고 온 데이터의 갯수를 나타낸다.
+
+#### **\[ 쿼리 메서드 예시 5]   대소문자 구분없이** 특정 키워드를 가지며 Stream 타입으로  Comment 데이터 조회
+
+* Stream 타입은 **try-with-resource문**을 사용해야한다. Stream은 닫아주어야 하기 때문이다.
+
+**테스트 코드**
+
+```java
+try (Stream<Comment> comments = commentRepository.findByCommentContainsIgnoreCase(String keyword , Pageable pageable))
+{
+    Comment firstComment = comments.findFirst().get();
+    assertThat(firstComment.getLikeCount()).isEqualTo(100);
+}
+```

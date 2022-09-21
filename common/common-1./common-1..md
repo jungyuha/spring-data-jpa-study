@@ -84,9 +84,9 @@ Page<Post> page = postRepository.findByTitleContains("spring",PageRequest.of(0,1
 
 #### 테스트 결과
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p> select 쿼리 실행</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p> select 쿼리 실행</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p> 바인드 변수값 확인하기</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (2) (1).png" alt=""><figcaption><p> 바인드 변수값 확인하기</p></figcaption></figure>
 
 
 

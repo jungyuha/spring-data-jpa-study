@@ -22,7 +22,7 @@ description: 스프링 데이터 Common이 지원하는 Null 처리 방법
 
 ### 1) 리턴값이 Optional인 경우
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p> 단일 리턴값이 Optional인 경우</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p> 단일 리턴값이 Optional인 경우</p></figcaption></figure>
 
 ### 2) 리턴값이 Optional이 아닌 경우
 
