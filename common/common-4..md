@@ -4,7 +4,7 @@ description: 스프링 데이터 Common 4. 쿼리 만들기
 
 # 스프링 데이터 Common 4. 쿼리 만들기
 
-## **\[1] 메소드 이름을 분석해서 쿼리 만들기 (CREATE)**
+## **\[1] 메서드 이름으로 쿼리 메서드 만들기 (CREATE)**
 
 Spring Data Jpa가 메서드 이름을 분석해서 쿼리를 직접 만든다.
 
@@ -13,6 +13,8 @@ Spring Data Jpa가 메서드 이름을 분석해서 쿼리를 직접 만든다.
 ### 쿼리 만드는 방법
 
 **리턴타입 {접두어}{도입부}By{프로퍼티 표현식}(조건식)\[(And|Or){프로퍼티 표현식}(조건식)]{정렬 조건} (매개변수)**
+
+* 리턴타입으로는 보통 도메인 객체 리스트 또는 도메인 타입(단일) 또는 Optional
 
 |          |                                                                     |
 | -------- | ------------------------------------------------------------------- |
@@ -30,13 +32,15 @@ Spring Data Jpa가 메서드 이름을 분석해서 쿼리를 직접 만든다.
 
 ## \[2] 미리 정의해 둔 쿼리 찾아 사용하기(USE\_DECLARED\_QUERY)
 
-### JPQL로 작성하기&#x20;
+### JPQL로 작성하기
+
+* 기본값은 JPQL로 작성해야한다.&#x20;
 
 <figure><img src="https://velog.velcdn.com/images/yooha9621/post/f9521c33-ffc1-4a71-982a-89132b481a2c/image.png" alt=""><figcaption><p>JPQL 사용 예시</p></figcaption></figure>
 
 ### Native SQL로 작성하기
 
-Native SQL로 작성할 땐 **nativeQuery = true** 를 추가한다.&#x20;
+Native SQL로 작성할 땐 **nativeQuery = true** 를 추가해야 한다.&#x20;
 
 <figure><img src="https://velog.velcdn.com/images/yooha9621/post/f2e01f7b-499e-40b6-800b-fa55fb518524/image.png" alt=""><figcaption><p>nativeQuery 사용 예시</p></figcaption></figure>
 
@@ -60,13 +64,80 @@ Native SQL로 작성할 땐 **nativeQuery = true** 를 추가한다.&#x20;
 
 ## \[3] 미리 정의한 쿼리 찾아보고 없으면 만들기 (CREATE\_IF\_NOT\_FOUND)
 
-* 기본값이다.
+* 스프링 데이터 Common의 기본 전략이다.
 * 첫 번째 방법과 두 번째 방법을 혼합한 것이다.
 * 메서드 명을 통해 먼저 적절한 쿼리를 찾고 없는 경우 미리 정의해 둔 쿼리를 찾아 사용한다.
 * **@EnableJpaRepositories**의 **QueryLookupStrategy**의 속성을 통해 설정이 가능하다.
 
 ![QueryLookupStrategy](https://velog.velcdn.com/images/yooha9621/post/2890e9c2-9bdc-4037-9a90-1fdd46ae9eab/image.png)
 
-&#x20;3가지 속성을 확인할 수 있다.
+&#x20;3가지 속성을 확인할 수 있다. 기본값은 **CREATE\_IF\_NOT\_FOUND** 이다.
 
 <figure><img src="https://velog.velcdn.com/images/yooha9621/post/3dbbbfa4-37ec-43b3-b1aa-5187c7a4463b/image.png" alt=""><figcaption><p><strong>QueryLookupStrategy</strong></p></figcaption></figure>
+
+
+
+### 쿼리 만드는 방법
+
+**리턴타입 {접두어}{도입부}By{프로퍼티 표현식}(조건식)\[(And|Or){프로퍼티 표현식}(조건식)]{정렬 조건} (매개변수)**
+
+#### 리턴타입의 종류
+
+* 도메인 객체 리스트 : List\<Post>
+* &#x20;도메인 타입(단일) : Post
+* Optional 타입 : Optional\<Post>
+  *   Page 타입  : Page \<Post>
+
+      * Page타입을 받고 싶으면 매개변수로 Pageable 파라미터를 줘야한다.
+
+      <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+      * 이 때 반환 객체가 Page가 아니라 List로 설정하면 페이징이 되지 않는다.
+      * Pageable 타입에는 Sorting (정렬) 기능도 포함되어 있다.
+* Slice 타입 : Slice \<Post>
+
+|          |                                                                     |
+| -------- | ------------------------------------------------------------------- |
+| 접두어      | **Find, Get, Query, Count, ...**                                    |
+| 도입부      | **Distinct, First(N), Top(N)**                                      |
+| 프로퍼티 표현식 | **Person.Address.ZipCode => find(Person)ByAddress\_ZipCode(...)**   |
+| 조건식      | **IgnoreCase, Between, LessThan, GreaterThan, Like, Contains, ...** |
+| 정렬 조건    | **OrderBy{프로퍼티}Asc\|Desc**                                          |
+| 리턴 타입    | **E, Optional\<E>, List\<E>, Page\<E>, Slice\<E>, Stream\<E>**      |
+| 매개변수     | **Pageable, Sort**                                                  |
+
+<figure><img src="https://velog.velcdn.com/images/yooha9621/post/940e49cf-068c-4d26-bbc0-b4d31584380e/image.png" alt=""><figcaption><p>comment 엔티티 예시</p></figcaption></figure>
+
+<figure><img src="https://velog.velcdn.com/images/yooha9621/post/a5e25271-e059-4880-be06-21d9171d10bb/image.png" alt=""><figcaption><p>create 방식 예시</p></figcaption></figure>
+
+## \[4] 테스트 만들어서 확인해보기
+
+### 1. 쿼리 메서드가 제대로 작성됐는지 확인하기
+
+* 굳이 끝까지 돌려보지 않고도 애플리케이션 테스트를 통해 확인할 수 있다.\
+  만약에 잘못된 쿼리 메서드이면 뜨지도 않고 에러가 난다!
+
+## \[5] **메서드 이름으로 쿼리 메서드 만들기** 실습
+
+### 1. 기본 실습
+
+#### 특정 키워드를 가진 Comment 데이터 조회하기
+
+*   **쿼리 메서드 1** : `List<Comment> findByCommentContains(String keyword);`
+
+    <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+*   **테스트 1 : 이 때 리스트에 값이 없는 경우 널이 나오지 않고 Empty로 나온다.**
+
+    <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+* **쿼리 메서드 2** : `List<Comment> findByCommentContainsIgnoreCaseAndLikeCountGreaterThan(String keyword,Integer likeCount);`
+*   **테스트 2**
+
+    <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+*   **테스트2 결과 쿼리**
+
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+* **쿼리 메서드 3** : `List<Comment> findByCommentContainsIgnoreCaseOrderByLikeCountDesc(String keyword);`
+* **테스트 3**&#x20;
+  *
+* ㅇ
+*

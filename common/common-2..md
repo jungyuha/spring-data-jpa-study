@@ -54,6 +54,6 @@ description: Repository를 색다른 방법으로 정의해보기
 
 공통 인터페이스에 CrudRepository의 특정 기능만 가져다 쓰고 싶으면 그냥 복사해서 가져다쓰면 된다.
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p> CrudRepository의 count 메서드를 복사한 모습</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p> CrudRepository의 count 메서드를 복사한 모습</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>테스트 코드</p></figcaption></figure>

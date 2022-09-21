@@ -31,7 +31,7 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 * 다른 빈들은 등록이 되지 않으며 레파지토리와 관련된 빈들만 등록된다.
 * 테스트에서는 인메모리데이터베이스를 사용하므로 기존에 설정한 데이터베이스와 독립적으로 테스트가 가능해진다.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p> 테스트 관련 어노테이션</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption><p> 테스트 관련 어노테이션</p></figcaption></figure>
 
 ### 2) CRUD 테스트 코드 작성 1 : save
 
@@ -58,7 +58,7 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 
 <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p> pagingAndSortingRepository의 findAll (Pageable)</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p> findAll (Pageable) 테스트 코드</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p> findAll (Pageable) 테스트 코드</p></figcaption></figure>
 
 * 0 페이지부터 시작해서 10개씩 보여주는 코드이다.
 * 리턴 타입이 **리스트가 아닌 페이지로** 나온다. 따라서 페이지에 대한 여러가지 정보를 확인할 수 있다.
