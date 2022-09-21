@@ -48,7 +48,7 @@ description: Repository를 색다른 방법으로 정의해보기
 
 그리고나서 **** 기존에 사용했던 **@RepositoryDefinition을 지우고** MyRepository 인터페이스를 상속받는다.
 
-<figure><img src="../.gitbook/assets/image (6) (2).png" alt=""><figcaption><p> <strong>@RepositoryDefinition을 지우고</strong> MyRepository 인터페이스를 상속받는다.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (2) (1).png" alt=""><figcaption><p> <strong>@RepositoryDefinition을 지우고</strong> MyRepository 인터페이스를 상속받는다.</p></figcaption></figure>
 
 공통 인터페이스에 CrudRepository의 특정 기능만 가져다 쓰고 싶으면 그냥 복사해서 가져다쓰면 된다.
 

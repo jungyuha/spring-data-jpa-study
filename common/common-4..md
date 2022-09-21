@@ -135,7 +135,7 @@ Native SQL로 작성할 땐 **nativeQuery = true** 를 추가한다.&#x20;
 List<Comment> findByCommentContains(String keyword);
 ```
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p><strong>쿼리 메서드</strong> </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption><p><strong>쿼리 메서드</strong> </p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
 
@@ -147,7 +147,7 @@ List<Comment> findByCommentContains(String keyword);
 List<Comment> findByCommentContainsIgnoreCaseAndLikeCountGreaterThan(String keyword,Integer likeCount);
 ```
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p><strong>쿼리 메서드</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption><p><strong>쿼리 메서드</strong></p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
 
@@ -159,9 +159,9 @@ List<Comment> findByCommentContainsIgnoreCaseAndLikeCountGreaterThan(String keyw
 List<Comment> findByCommentContainsIgnoreCaseOrderByLikeCountDesc(String keyword);
 ```
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p><strong>쿼리 메서드</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption><p><strong>쿼리 메서드</strong></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>테스트</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (2).png" alt=""><figcaption><p>테스트</p></figcaption></figure>
 
 #### **\[ 쿼리 메서드 예시 4]   대소문자 구분없이** 특정 키워드를 가지며 페이징 처리한  Comment 데이터 조회
 
