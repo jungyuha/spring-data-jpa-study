@@ -149,7 +149,7 @@ List<Comment> findByCommentContainsIgnoreCaseAndLikeCountGreaterThan(String keyw
 
 <figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption><p><strong>쿼리 메서드</strong></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
 
 
 
@@ -187,10 +187,10 @@ Page<Comment> findByCommentContainsIgnoreCase("Spring" , pageRequest);
 
 
 
-      <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
   *   **page , size , 정렬하는 direction , 정렬하는 properties**를 제공하는 타입
 
-      <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 * Page 타입의 **getNumberOfElements()** 메서드는 현재 가지고 온 데이터의 갯수를 나타낸다.
 
 #### **\[ 쿼리 메서드 예시 5]   대소문자 구분없이** 특정 키워드를 가지며 Stream 타입으로  Comment 데이터 조회

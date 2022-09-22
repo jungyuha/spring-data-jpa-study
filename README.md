@@ -20,7 +20,7 @@ description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
 
 * JpaRepository는 스프링 데이터 Jpa가 제공하는 인터페이스이다.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p> JpaRepository는 스프링 데이터 Jpa가 제공하는 인터페이스</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p> JpaRepository는 스프링 데이터 Jpa가 제공하는 인터페이스</p></figcaption></figure>
 
 
 
@@ -57,4 +57,4 @@ description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
 
       <figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p> NoRepositoryBean 어노테이션이 달려있는 JpaRepository</p></figcaption></figure>
 
-      <figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption><p> @NoRepositoryBean 어노테이션이 달려있는 PagingAndSortingRepository</p></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p> @NoRepositoryBean 어노테이션이 달려있는 PagingAndSortingRepository</p></figcaption></figure>

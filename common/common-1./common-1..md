@@ -58,7 +58,7 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 
 ### 4) pagingAndSortingRepository 테스트 코드 작성 1 : findAll (Pageable)
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p> pagingAndSortingRepository의 findAll (Pageable)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption><p> pagingAndSortingRepository의 findAll (Pageable)</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p> findAll (Pageable) 테스트 코드</p></figcaption></figure>
 
