@@ -52,7 +52,7 @@ description: 스프링 데이터 Common이 지원하는 Null 처리 방법
 * isPresent() : 값의 여부를 확인한다.
 *   orElse() : 값이 있으면 조회한 값을 가져오고 값이 없는 경우 대체 인스턴스를 반환하는 기능이다.
 
-    <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p> Optional의 orElse()</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption><p> Optional의 orElse()</p></figcaption></figure>
 *   orElseThrow() : 값이 있으면 조회한 값을 가져오고 값이 없는 경우 예외를 던지는 기능을 한다.
 
     <figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption><p> Optional의 orElseThrow()</p></figcaption></figure>

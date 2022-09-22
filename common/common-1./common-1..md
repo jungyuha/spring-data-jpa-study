@@ -40,7 +40,7 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 1. 저장할 엔티티(인스턴스)를 생성한다.
 2. 생성한 엔티티를 저장한다.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p> CRUD 테스트 코드 작성 1 : save</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption><p> CRUD 테스트 코드 작성 1 : save</p></figcaption></figure>
 
 #### 테스트 결과 : 발급된 Id는 반환되지만 실제로 Insert는 되지 않는다.
 
