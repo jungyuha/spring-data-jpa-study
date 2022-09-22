@@ -1,3 +1,7 @@
+---
+description: 스프링 데이터 Common 5. 커스텀 리포지토리 만들기
+---
+
 # 스프링 데이터 Common 5. 커스텀 리포지토리 만들기
 
 **기록 ✍️**
@@ -6,7 +10,7 @@
 
 **first registered : 2022-09-21 wed**
 
-**last modified : 2022-09-21 wed**
+**last modified : 2022-09-22 Thu**
 
 ## **\[1] 프로젝트 기본 셋팅하기**
 
@@ -106,7 +110,7 @@ public interface PostRepository extends JpaRepositoryPost,Long> , PostCutomRepos
 이 때 기본 메서드를 가져오면 인터페이스 내 같은 이름의 함수로 중복이 된다.\
 이 때 **스프링 데이터 Jpa는 항상 커스텀하게 구현한 메서드를 우선순위로 실행한다.**
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p> 스프링 데이터 Repository의 delete 함수를 가져온 모습 </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption><p> 스프링 데이터 Repository의 delete 함수를 가져온 모습 </p></figcaption></figure>
 
 ### 두번째 순서, 가져온 기본 메서드를 직접 구현한다.&#x20;
 
@@ -136,7 +140,7 @@ publicP interface PostRepository extends JpaRepositoryPost,Long> , PostCutomRepo
 
 #### 테스트 코드 2 : 데이터 INSERT 후 SELECT하고 DELETE 하기
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p> 데이터 INSERT 후 SELECT하고 DELETE 하기</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p> 데이터 INSERT 후 SELECT하고 DELETE 하기</p></figcaption></figure>
 
 #### &#x20;테스트 결과 : INSERT를 해야 SELECT가 가능하기때문에 INSERT,SELECT는 처리되나 DELETE는 실행되지 않는다.어차피 롤백되기 때문이다.
 
@@ -158,3 +162,12 @@ entity manager는 이미 해당 객체를 removed 상태로 변경시킨 상태�
 
 ## \[4] 접미어 설정하기(Impl)
 
+인터페이스 구현체를 만들 때 기본 접미어로 Impl을 사용한다.이 때 Impl말고 다른 단어로 대체할 수 있다.
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>기본 접미어 Impl</p></figcaption></figure>
+
+### 애플리케이션 메인에서 @EnableJpaRepositories 재설정한다.
+
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption><p> Impl을 Default로 설정</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption><p>  Impl을 Default로 바꾼 모습</p></figcaption></figure>

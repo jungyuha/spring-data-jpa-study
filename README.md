@@ -34,7 +34,7 @@ description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
 * 페이징과 Sorting(정렬)을 지원하는 메서드가 있다.
 *   기본적인 CRUD 기능을 가진 **CrudRepository** 인터페이스를 상속받는다.
 
-    <figure><img src=".gitbook/assets/image (2) (2).png" alt=""><figcaption><p><strong>CrudRepository</strong> 인터페이스를 상속받은 모습</p></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (2) (2) (1).png" alt=""><figcaption><p><strong>CrudRepository</strong> 인터페이스를 상속받은 모습</p></figcaption></figure>
 
 ### 3) **CrudRepository**
 
