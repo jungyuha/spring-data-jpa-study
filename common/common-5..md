@@ -134,7 +134,7 @@ publicP interface PostRepository extends JpaRepositoryPost,Long> , PostCutomRepo
 
 #### 테스트 코드 1  : 데이터 INSERT 후 DELETE하기
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p> 데이터 INSERT후 DELETE 하기</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (3).png" alt=""><figcaption><p> 데이터 INSERT후 DELETE 하기</p></figcaption></figure>
 
 #### 테스트 결과  : 실제로 삽입과 삭제가 일어나지 않는다. TEST에서는 어차피 다시 ROLLBACK 처리 할것이기 때문이다.
 
