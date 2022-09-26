@@ -24,7 +24,7 @@ description: Repository를 색다른 방법으로 정의해보기
 
 
 
-    <figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption><p> Repository 인터페이스 생성</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (10) (2) (1).png" alt=""><figcaption><p> Repository 인터페이스 생성</p></figcaption></figure>
 2. 아무 인터페이스를 상속받지 않고 **@RepositoryDefinition**을 사용해서 직접 정의한다.
    1.  첫번째 단점은 정말 아무 기능도 안 들어온다는 것이다.😅&#x20;
 

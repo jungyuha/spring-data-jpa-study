@@ -147,7 +147,7 @@ List<Comment> findByCommentContains(String keyword);
 List<Comment> findByCommentContainsIgnoreCaseAndLikeCountGreaterThan(String keyword,Integer likeCount);
 ```
 
-<figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption><p><strong>쿼리 메서드</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (2) (1).png" alt=""><figcaption><p><strong>쿼리 메서드</strong></p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
 
@@ -159,7 +159,7 @@ List<Comment> findByCommentContainsIgnoreCaseAndLikeCountGreaterThan(String keyw
 List<Comment> findByCommentContainsIgnoreCaseOrderByLikeCountDesc(String keyword);
 ```
 
-<figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption><p><strong>쿼리 메서드</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (2) (1).png" alt=""><figcaption><p><strong>쿼리 메서드</strong></p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (9) (2).png" alt=""><figcaption><p>테스트</p></figcaption></figure>
 

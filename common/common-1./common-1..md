@@ -52,7 +52,7 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 
 ### 3) CRUD 테스트 코드 작성 2 : findAll
 
-<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p> findAll 테스트 코</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2) (2).png" alt=""><figcaption><p> findAll 테스트 코</p></figcaption></figure>
 
 #### 테스트 결과 : 모든 데이터가 반환된다.
 

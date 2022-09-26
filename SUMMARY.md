@@ -9,6 +9,7 @@
 * [스프링 데이터 Common 4. 쿼리 만들기](common/common-4..md)
 * [스프링 데이터 Common 5. 커스텀 리포지토리 만들기](common/common-5..md)
 * [스프링 데이터 Common 6.  기본 리포지토리 커스터마이징하기](common/common-6..md)
+* [스프링 데이터 Common 7. 도메인 이벤트](common/common-7..md)
 
 ## ModelMapper
 

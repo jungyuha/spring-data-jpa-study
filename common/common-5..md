@@ -21,13 +21,13 @@ description: 스프링 데이터 Common 5. 커스텀 리포지토리 만들기
 
 
 
-    <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 * **application.properties** 파일에서 쿼리 출력에 관해 설정한다.(출력되는 쿼리를 편하게 보기 위해서이다.)
   *   이 때 테스트 실행의 경우 show-sql은 자동으로 true가 된다.&#x20;
 
-      <figure><img src="../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
   * ![](<../.gitbook/assets/image (9).png>)
 
 **application.properties는 resources 아래에 있다.**
@@ -64,7 +64,7 @@ description: 스프링 데이터 Common 5. 커스텀 리포지토리 만들기
 
 ### 두번째 순서 , 원하는 메서드를 정의한다.
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p> 메서드를 정의</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption><p> 메서드를 정의</p></figcaption></figure>
 
 ### 세번째 순서 , 해당 메서드의 구현체를 정의한다.
 
@@ -75,7 +75,7 @@ description: 스프링 데이터 Common 5. 커스텀 리포지토리 만들기
 entityManager.createQuery("SELECT p FROM Post AS p", Post.class).getResultList();
 ```
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p> 메서드의 구현체를 정의한다.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (2).png" alt=""><figcaption><p> 메서드의 구현체를 정의한다.</p></figcaption></figure>
 
 ### 네번째 순서 , Repository에 커스텀 Repository를 등록한다.
 
@@ -95,7 +95,7 @@ public interface PostRepository extends JpaRepositoryPost,Long> , PostCutomRepos
 
 ### 테스트 코드 작성&#x20;
 
-<figure><img src="../.gitbook/assets/image (7) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p> 테스트 결과</p></figcaption></figure>
 
@@ -114,7 +114,7 @@ public interface PostRepository extends JpaRepositoryPost,Long> , PostCutomRepos
 
 ### 두번째 순서, 가져온 기본 메서드를 직접 구현한다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p> delete 함수를 직접 구현한 모습</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption><p> delete 함수를 직접 구현한 모습</p></figcaption></figure>
 
 ### 세번째 순서 , Repository에 커스텀 Repository를 등록한다.
 
@@ -158,13 +158,13 @@ entity manager는 이미 해당 객체를 removed 상태로 변경시킨 상태�
 
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p> flush 메서드를 실행</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p> flush 메서드를 실행</p></figcaption></figure>
 
 ## \[4] 접미어 설정하기(Impl)
 
 인터페이스 구현체를 만들 때 기본 접미어로 Impl을 사용한다.이 때 Impl말고 다른 단어로 대체할 수 있다.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (4).png" alt=""><figcaption><p>기본 접미어 Impl</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>기본 접미어 Impl</p></figcaption></figure>
 
 ### 애플리케이션 메인에서 @EnableJpaRepositories 재설정한다.
 

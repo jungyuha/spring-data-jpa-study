@@ -36,11 +36,11 @@ description: 모든 Entity 레파지토리에 추가하거나 오버라이딩하
 
 **어떤 Entity가 persistent Context에 존재하는지 체크하는 공통 메서드를 만들어보도록 하자.**
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p> <strong>어떤 Entity가 persistent Context에 존재하는지 체크한다.</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (4).png" alt=""><figcaption><p> <strong>어떤 Entity가 persistent Context에 존재하는지 체크한다.</strong></p></figcaption></figure>
 
 또 다른 기능을 참고해서 추가하고 싶다면 **JpaRepository**로 들어가서 원하는 메서드를 복사한 뒤&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p> <strong>JpaRepository</strong>로 들어가서 원하는 메서드를 복사한다. </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p> <strong>JpaRepository</strong>로 들어가서 원하는 메서드를 복사한다. </p></figcaption></figure>
 
 구현체인 **SimpleJpaRepository**에서 복사한 메서드를 오버라이딩하여 직접 커스텀한다.
 
@@ -87,7 +87,7 @@ public class SimpleMyRepository<T, ID extends Serializable> extends SimpleJpaRep
 
 우리가 구현하고자 하는 BaseClass를 **@EnableJpaRepositoriers** 어노테이션에 명시해야한다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p> @EnableJpaRepositories</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p> @EnableJpaRepositories</p></figcaption></figure>
 
 ```java
 @EnableJpaRepositories(repositoryBaseClass = SimpleMyRepository.class)
@@ -110,4 +110,4 @@ public interface PostRepository extends MyRepository<Post, Long> {
 
 #### 예시 : Contains를 통해 Save하기 전에 PostRepository에 Post의 존재여부를 확인한 뒤 Save를 진행한다.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p> Post의 존재여부를 확인한 뒤 Save를 진행한다.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p> Post의 존재여부를 확인한 뒤 Save를 진행한다.</p></figcaption></figure>
