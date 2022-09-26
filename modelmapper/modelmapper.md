@@ -98,6 +98,8 @@ return modelMapper;
 
 ### 3) 사용 예시
 
+#### 예시 1
+
 ```java
 //DI
 @Autowired
@@ -107,14 +109,27 @@ ArrayList<AfterVo> afterVoList new ArrayList<AfterVo>();
 ModelMapper modelMapper
 for (BeforeVo v : BeforeVoList) {
 customModelMapper.strictMapper();
-afterVoList.add(modelMapper.map(v, BeforeVo.class));
+afterVoList.add(modelMapper.map(v, AfterVo.class));
 ```
 
 만약 BeforeVo서 id, name, address, phone 4가지 필드를 가지고, AfterVo에는 id,name 2가지만 가지고 있다면이때 **BeforeVo의 id, name만 AfterVo에 맞게 매핑**된다.
 
+#### 예시 2
+
+```java
+public class AServiceImpl implements AService {
+	@Autowired
+	ModelMapper modelMapper;
+	public int methodA() {
+		modelMapper.map(source, destination);
+	}
+	...
+}
+```
+
 ## \[3] ModelMapper 매핑 전략 3가지
 
-### 1) MatchingStrategies.STANDARD
+### 1) MatchingStrategies.STANDRD
 
 * 지능적으로 매핑한다.
 * source 속성을 destination 속성과 지능적으로 일치시킬 수 있으므로, 모든 destination 속성이 일치하고 모 든 source 속성 이름에 토큰이 하나 이상 일치해야한다.
