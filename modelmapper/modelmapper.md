@@ -75,24 +75,28 @@ public class RootContext {
 ```java
 @Configuration
 public class CustomModelMapper {
-private final ModelMapper modelMapper = new ModelMapper();
-@Bean
-public ModelMapper strictMapper() {
-// 매핑 전략 설정
-modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies. STRICT);
-return modelMapper;
-}
-@Bean
-public ModelMapper standardMapper() {
-// 매핑 전략 설정
-modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STANDARD);
-return modelMapper;
-}
-@Bean
-public ModelMapper looseMapper() {
-// 매핑 전략 설정
-modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.LOOSE) ;
-return modelMapper;
+    @Bean
+    public ModelMapper strictMapper() {
+        // 매핑 전략 설정
+        ModelMapper modelMapper = new ModelMapper();
+        modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+        return modelMapper;
+    }
+    @Bean
+    public ModelMapper standardMapper() {
+        // 매핑 전략 설정
+        ModelMapper modelMapper = new ModelMapper();
+        modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STANDARD);
+        System.out.println(modelMapper.getConfiguration().getMatchingStrategy().toString());
+        return modelMapper;
+    }
+    @Bean
+    public ModelMapper looseMapper() {
+        // 매핑 전략 설정
+        ModelMapper modelMapper = new ModelMapper();
+        modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.LOOSE) ;
+        return modelMapper;
+    }
 }
 ```
 
