@@ -16,7 +16,7 @@ description: ModelMapper 활용법
 
 ### ModelMapper란? <a href="#sub-title1-0" id="sub-title1-0"></a>
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p> 엔티티와 DTO간의 변환시 자동 맵핑한다.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p> 엔티티와 DTO간의 변환시 자동 맵핑한다.</p></figcaption></figure>
 
 ModelMapper는 엔티티와 DTO 간에 변환할 때 자동으로 매핑시켜주는 라이브러리이다.
 

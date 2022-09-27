@@ -171,7 +171,7 @@ Page<Comment> findByCommentContainsIgnoreCase(String keyword , Pageable pageable
 
 **테스트 코드**
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (3).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
 
 ```java
 PageRequest pageRequest = pageRequest.of(0,10,Sort.by(Sort.Direction.DESC,LikeCount));

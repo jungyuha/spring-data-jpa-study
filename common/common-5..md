@@ -27,7 +27,7 @@ description: 스프링 데이터 Common 5. 커스텀 리포지토리 만들기
 * **application.properties** 파일에서 쿼리 출력에 관해 설정한다.(출력되는 쿼리를 편하게 보기 위해서이다.)
   *   이 때 테스트 실행의 경우 show-sql은 자동으로 true가 된다.&#x20;
 
-      <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
   * ![](<../.gitbook/assets/image (9).png>)
 
 **application.properties는 resources 아래에 있다.**
@@ -36,7 +36,7 @@ description: 스프링 데이터 Common 5. 커스텀 리포지토리 만들기
 
 ### 2) Entity 생성
 
-![](<../.gitbook/assets/image (3) (1).png>)
+![](<../.gitbook/assets/image (3) (1) (4).png>)
 
 * 컬럼의 크기가 255자가 넘는 경우에는 **@Lob** 어노테이션을 달아주도록 한다.
 * 날짜 위에는 **@Temporal** 어노테이션을 달아주도록 한다.
@@ -110,7 +110,7 @@ public interface PostRepository extends JpaRepositoryPost,Long> , PostCutomRepos
 이 때 기본 메서드를 가져오면 인터페이스 내 같은 이름의 함수로 중복이 된다.\
 이 때 **스프링 데이터 Jpa는 항상 커스텀하게 구현한 메서드를 우선순위로 실행한다.**
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption><p> 스프링 데이터 Repository의 delete 함수를 가져온 모습 </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption><p> 스프링 데이터 Repository의 delete 함수를 가져온 모습 </p></figcaption></figure>
 
 ### 두번째 순서, 가져온 기본 메서드를 직접 구현한다.&#x20;
 
