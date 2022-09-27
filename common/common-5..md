@@ -95,7 +95,7 @@ public interface PostRepository extends JpaRepositoryPost,Long> , PostCutomRepos
 
 ### 테스트 코드 작성&#x20;
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p> 테스트 결과</p></figcaption></figure>
 

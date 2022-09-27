@@ -2,7 +2,7 @@
 description: 스프링 데이터 Common이 제공하는  도메인 이벤트 퍼블리싱 기능 알아보기
 ---
 
-# 스프링 데이터 Common 7. 도메인 이벤트
+# 스프링 데이터 Common 7. 도메인 이벤트의 개념
 
 **기록 ✍️**
 
@@ -10,7 +10,7 @@ description: 스프링 데이터 Common이 제공하는  도메인 이벤트 퍼
 
 **first registered : 2022-09-26 Mon**
 
-**last modified : 2022-09-26 Mon**
+**last modified : 2022-09-27 Tue**
 
 ## \[1] 도메인 이벤트 퍼블리싱이란?
 
@@ -49,17 +49,43 @@ description: 스프링 데이터 Common이 제공하는  도메인 이벤트 퍼
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-### 5. 이벤트 리스너 생성
+### 5. 이벤트 리스너 생성하기 : ApplicationListener 클래스 상속받아 사용하기
 
-#### 이벤트 리스너 만드는 방법에는 2가지 방법이 있다.
-
-#### 첫번째 방법 , ApplicationListener 클래스 상속받아 사용하기
+#### 1. 리스너 클래스 생성 및 구현하기
 
 <figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p> ApplicationListener 클래스 상속받아 사용하기</p></figcaption></figure>
 
 **ApplicationListener** 클래스한테 이 이벤트 리스너가 받을 이벤트 타입을 알려주고 해당 클래스를 상속받는다.
 
 이 이벤트 리스너가 이벤트를 리스닝했을 때 해야할일을 **onApplicationEvent** 메서드에서 구현한다.
+
+#### 2. 리스너 클래스를 빈으로 등록하기
+
+리스너를 빈으로 등록하기 위해 테스트용 **Configuration** 파일을 생성한다.\
+(테스트용이므로 테스트 디렉토리 내에 생성한다.)
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p> 리스너를 빈으로 등록</p></figcaption></figure>
+
+#### 3. 등록한 빈을 테스트코드에 추가 설정한다.
+
+테스트 코드에 테스트용 등록한 설정 파일을 Import하면 **테스트를 실행할 때 해당 설정 파일도 가지고 와서**\
+**리스너를 빈으로 등록을 해준다.**
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p> 테스트 코드에 테스트용 등록한 설정 파일을 Import</p></figcaption></figure>
+
+### 6. 테스트 실행 : 이벤트가 퍼블리싱 되는 구조
+
+1. Post가 변경되면 **이벤트가 실행**된다.
+2. **이벤트 퍼블리셔**가 이 이벤트를 던지게 되면
+3. **리스너**가 이벤트를 잡아 **메서드를 실행**한다.
+
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p> 이벤트 발생</p></figcaption></figure>
+
+
+
+
+
+
 
 
 

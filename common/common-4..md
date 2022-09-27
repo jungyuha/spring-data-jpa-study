@@ -187,7 +187,7 @@ Page<Comment> findByCommentContainsIgnoreCase("Spring" , pageRequest);
 
 
 
-      <figure><img src="../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (7) (2) (2).png" alt=""><figcaption></figcaption></figure>
   *   **page , size , 정렬하는 direction , 정렬하는 properties**를 제공하는 타입
 
       <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
