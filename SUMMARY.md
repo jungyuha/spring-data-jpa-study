@@ -14,3 +14,7 @@
 ## ModelMapper
 
 * [ModelMapper 사용법](modelmapper/modelmapper.md)
+
+## etc
+
+* [save를 통해 Insert와 Update 처리하기](etc/save-insert-update.md)
