@@ -17,4 +17,4 @@
 
 ## etc
 
-* [save를 통해 Insert와 Update 처리하기](etc/save-insert-update.md)
+* [JpaRepository로 기본 CRUD 구현하기](etc/jparepository-crud.md)
