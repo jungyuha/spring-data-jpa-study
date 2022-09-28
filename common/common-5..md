@@ -50,7 +50,7 @@ description: 스프링 데이터 Common 5. 커스텀 리포지토리 만들기
 
 *   메서드를 굳이 호출하지 않아도 일단 빈으로 잘 등록이 되는지 부터 확인하도록 한다.
 
-    <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption><p>빈으로 잘 등록이 되는지  확인</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption><p>빈으로 잘 등록이 되는지  확인</p></figcaption></figure>
 
 
 
@@ -97,7 +97,7 @@ public interface PostRepository extends JpaRepositoryPost,Long> , PostCutomRepos
 
 <figure><img src="../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p> 테스트 결과</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption><p> 테스트 결과</p></figcaption></figure>
 
 
 

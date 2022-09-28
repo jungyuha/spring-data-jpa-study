@@ -26,7 +26,7 @@ description: 모든 Entity 레파지토리에 추가하거나 오버라이딩하
 
 기존에는 JpaRepository를 상속받아 사용했다.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p> JpaRepository를 상속받아 사용</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (4).png" alt=""><figcaption><p> JpaRepository를 상속받아 사용</p></figcaption></figure>
 
 #### 모든 Entity에 적용될 Repository를 생성한다.이 때 JpaRepository를 상속받아 만든다.
 
@@ -44,7 +44,7 @@ description: 모든 Entity 레파지토리에 추가하거나 오버라이딩하
 
 구현체인 **SimpleJpaRepository**에서 복사한 메서드를 오버라이딩하여 직접 커스텀한다.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p> 복사한 메서드를 오버라이딩하여 직접 커스텀한다.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p> 복사한 메서드를 오버라이딩하여 직접 커스텀한다.</p></figcaption></figure>
 
 ### **3. 공통 메서드 구현체 만들기 :** SimpleJpaRepository 구현체와 우리가 정의한 Myepository도 상속받은 인터페이스 생성
 

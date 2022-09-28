@@ -29,7 +29,7 @@ description: 스프링 데이터 Common 7. 스프링 데이터의 도메인 이�
 하지만 이를 직접 구현할 필요 없이 **스프링 데이터가 제공해주는 extends AbstractAggregateRoot** 를 통해 \
 미리 구현되어 있는 기능을 사용한다.&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p> <strong>스프링 데이터가 제공해주는 extends AbstractAggregateRoot</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption><p> <strong>스프링 데이터가 제공해주는 extends AbstractAggregateRoot</strong></p></figcaption></figure>
 
 **AbstractAggregateRoot** 안에는 이미 위 2개의 어노테이션을 가지고 있는 메서드가 구현되어있다.
 

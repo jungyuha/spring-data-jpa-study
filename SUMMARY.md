@@ -12,6 +12,10 @@
 * [스프링 데이터 Common 7. 도메인 이벤트의 개념](common/common-7./README.md)
   * [스프링 데이터 Common 7. 스프링 데이터의 도메인 이벤트 Publisher](common/common-7./common-7.-publisher.md)
 
+***
+
+* [스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기](common-8.-querydsl.md)
+
 ## ModelMapper
 
 * [ModelMapper 사용법](modelmapper/modelmapper.md)
