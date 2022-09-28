@@ -29,17 +29,17 @@ description: 스프링 데이터 Common이 제공하는  도메인 이벤트 퍼
 
 **ApplicationEvent**를 상속받아 **PostPublishedEvent** 라는 클래스를 생성한다.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption><p><strong>ApplicationEvent</strong>를 상속 </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (2).png" alt=""><figcaption><p><strong>ApplicationEvent</strong>를 상속 </p></figcaption></figure>
 
 ### 2. 이벤트를 발생시키는 곳이 Post임을 나타낸다.
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Post의 getter를 생성한다.
 
 이 이벤트를 받는 리스너쪽에서 어떤 Post에 대한 이벤트였는지 참조할 수 있는 Getter를 만든다.
 
-<figure><img src="../../.gitbook/assets/image (8) (2).png" alt=""><figcaption><p> Post의 getter</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (3).png" alt=""><figcaption><p> Post의 getter</p></figcaption></figure>
 
 ### 4. 이벤트 발생시키기
 
@@ -53,7 +53,7 @@ description: 스프링 데이터 Common이 제공하는  도메인 이벤트 퍼
 
 #### 1. 리스너 클래스 생성 및 구현하기
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p> ApplicationListener 클래스 상속받아 사용하기</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (3).png" alt=""><figcaption><p> ApplicationListener 클래스 상속받아 사용하기</p></figcaption></figure>
 
 **ApplicationListener** 클래스한테 이 이벤트 리스너가 받을 이벤트 타입을 알려주고 해당 클래스를 상속받는다.
 
@@ -89,7 +89,7 @@ ApplicationListener 클래스를 상속받지 않고도 @EventListener 클래스
 
 즉 , PostListener 클래스를 삭제해도 된다.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure>
 
 ### 6. 테스트 실행 : 이벤트가 퍼블리싱 되는 구조
 

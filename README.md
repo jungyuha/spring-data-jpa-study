@@ -14,7 +14,7 @@ description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
 
 *   JpaRepository를 상속받아 레포지토리를 만들었다.
 
-    <figure><img src=".gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p> JpaRepository를 상속받은 모습</p></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p> JpaRepository를 상속받은 모습</p></figcaption></figure>
 
 ### 1) JpaRepository
 
