@@ -182,7 +182,7 @@ Page<Comment> findByCommentContainsIgnoreCase("Spring" , pageRequest);
 * Pagerequest 타입은 static한 세 가지 타입을 지원한다.
   *   **page , size**를 제공하는 타입&#x20;
 
-      <figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
   *   **page , size , sort**를 제공하는 타입
 
 

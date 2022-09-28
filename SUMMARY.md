@@ -14,7 +14,8 @@
 
 ***
 
-* [스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기](common-8.-querydsl.md)
+* [스프링 데이터 Common 8. QueryDSL 특징 , 연동하기](common-8.-querydsl/README.md)
+  * [스프링 데이터 Common 8. QueryDSL 기본 구현하기](common-8.-querydsl/common-8.-querydsl.md)
 
 ## ModelMapper
 
@@ -24,3 +25,4 @@
 
 * [JpaRepository로 기본 CRUD 구현하기](etc/save-insert-update.md)
 * [JPA Top1 쿼리 구현하는 2가지 방법](etc/jpa-top1-2.md)
+* [JPA 쿼리 로그 설정하는 법](etc/jpa.md)

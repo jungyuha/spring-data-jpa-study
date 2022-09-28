@@ -29,17 +29,17 @@ description: 스프링 데이터 Common이 제공하는  도메인 이벤트 퍼
 
 **ApplicationEvent**를 상속받아 **PostPublishedEvent** 라는 클래스를 생성한다.
 
-<figure><img src="../../.gitbook/assets/image (19) (2).png" alt=""><figcaption><p><strong>ApplicationEvent</strong>를 상속 </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption><p><strong>ApplicationEvent</strong>를 상속 </p></figcaption></figure>
 
 ### 2. 이벤트를 발생시키는 곳이 Post임을 나타낸다.
 
-<figure><img src="../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Post의 getter를 생성한다.
 
 이 이벤트를 받는 리스너쪽에서 어떤 Post에 대한 이벤트였는지 참조할 수 있는 Getter를 만든다.
 
-<figure><img src="../../.gitbook/assets/image (8) (3).png" alt=""><figcaption><p> Post의 getter</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (2).png" alt=""><figcaption><p> Post의 getter</p></figcaption></figure>
 
 ### 4. 이벤트 발생시키기
 
@@ -71,7 +71,7 @@ description: 스프링 데이터 Common이 제공하는  도메인 이벤트 퍼
 테스트 코드에 테스트용 등록한 설정 파일을 Import하면 **테스트를 실행할 때 해당 설정 파일도 가지고 와서**\
 **리스너를 빈으로 등록을 해준다.**
 
-<figure><img src="../../.gitbook/assets/image (12) (2).png" alt=""><figcaption><p> 테스트 코드에 테스트용 등록한 설정 파일을 Import</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p> 테스트 코드에 테스트용 등록한 설정 파일을 Import</p></figcaption></figure>
 
 ### 5-1. 이벤트 리스너 생성하기 : @EventListener 어노테이션 붙이기
 

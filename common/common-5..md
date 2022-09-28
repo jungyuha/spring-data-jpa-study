@@ -28,7 +28,7 @@ description: 스프링 데이터 Common 5. 커스텀 리포지토리 만들기
   *   이 때 테스트 실행의 경우 show-sql은 자동으로 true가 된다.&#x20;
 
       <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
-  * ![](<../.gitbook/assets/image (9).png>)
+  * ![](<../.gitbook/assets/image (9) (3).png>)
 
 **application.properties는 resources 아래에 있다.**
 
@@ -50,7 +50,7 @@ description: 스프링 데이터 Common 5. 커스텀 리포지토리 만들기
 
 *   메서드를 굳이 호출하지 않아도 일단 빈으로 잘 등록이 되는지 부터 확인하도록 한다.
 
-    <figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption><p>빈으로 잘 등록이 되는지  확인</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption><p>빈으로 잘 등록이 되는지  확인</p></figcaption></figure>
 
 
 
@@ -97,7 +97,7 @@ public interface PostRepository extends JpaRepositoryPost,Long> , PostCutomRepos
 
 <figure><img src="../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption><p> 테스트 결과</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p> 테스트 결과</p></figcaption></figure>
 
 
 
@@ -168,6 +168,6 @@ entity manager는 이미 해당 객체를 removed 상태로 변경시킨 상태�
 
 ### 애플리케이션 메인에서 @EnableJpaRepositories 재설정한다.
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption><p> Impl을 Default로 설정</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption><p> Impl을 Default로 설정</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption><p>  Impl을 Default로 바꾼 모습</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption><p>  Impl을 Default로 바꾼 모습</p></figcaption></figure>

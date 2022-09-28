@@ -2,7 +2,7 @@
 description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 ---
 
-# 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
+# 스프링 데이터 Common 8. QueryDSL 특징 , 연동하기
 
 **기록 ✍️**
 
@@ -17,7 +17,7 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 * 조건문을 표현하는 방법이 타입 세이프하다.
 * 조건문들을 조합할 수 있다.
 * 쿼리를 자바 코드로 짤 수 있다.
-  * ![](<.gitbook/assets/image (12).png>)
+  * ![](<../.gitbook/assets/image (10).png>)
 * **Predicate 인터페이스**로 **** 조건문들을 표현한다.
   * **Predicate 인터페이스는 서로** 조합할 수도 있고 또는 별도의 클래스에 모아서 따로 관리할 수도 있다.
 * 조건이 많아질수록 쿼리메서드가 굉장히 복잡해지는데 이 때 QueryDSL을 쓰면 된다.
@@ -35,15 +35,15 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 
 #### 1 . 엔티티 생성 : Account 라는 엔티티를 생성한다.
 
-![](<.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (8).png>)
 
 #### 2. 레파지토리 생성 : JpaRepository를 상속받아 AccountRepository를 생성한다.
 
-<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption><p> AccountRepository</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p> AccountRepository</p></figcaption></figure>
 
 #### 3. 테스트 파일 생성
 
-![](.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (23).png>)
 
 ### 1) 의존성 추가
 
@@ -61,7 +61,7 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 ```
 
 * queryDSL은 스프링부트가 의존성 관리를 해준다.따라서 pom.xml에 따로 버전을 명시하지 않아도 된다.
-  * <img src=".gitbook/assets/image (18).png" alt="" data-size="original">
+  * <img src="../.gitbook/assets/image (26).png" alt="" data-size="original">
     * **query-apt 모듈**은 쿼리를 생성해준다. :  엔티티 모델을 보고 그 모델에 맞는 **쿼리 Language를 만든다.**
       * 이를 위해서는 **플러그인 설정이 필요**하다.&#x20;
 
@@ -93,13 +93,13 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 #### 3. compile 실행
 
 * maven의 lifecycle에서 컴파일을 실행한다.
-  * ![](<.gitbook/assets/image (20).png>)
+  * ![](<../.gitbook/assets/image (27).png>)
 * **target/generated-sources/java** 밑에 QAccount라는 **클래스가 자동생성**된다.\
   **이는 Account 엔티티에 대한 쿼리 Language를 만들어줄 것이다.**
-  * ![](<.gitbook/assets/image (1).png>)
+  * ![](<../.gitbook/assets/image (2).png>)
 
 ### 3) 자동생성된 클래스 테스트
 
 테스트 코드에 클래스가 잘 생성되는지 확인한다.
 
-![](<.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (7).png>)
