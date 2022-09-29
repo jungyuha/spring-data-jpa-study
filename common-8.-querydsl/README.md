@@ -35,11 +35,11 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 
 #### 1 . 엔티티 생성 : Account 라는 엔티티를 생성한다.
 
-![](<../.gitbook/assets/image (19).png>)
+![](<../.gitbook/assets/image (19) (3).png>)
 
 #### 2. 레파지토리 생성 : JpaRepository를 상속받아 AccountRepository를 생성한다.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p> AccountRepository</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (3).png" alt=""><figcaption><p> AccountRepository</p></figcaption></figure>
 
 #### 3. 테스트 파일 생성
 
@@ -93,13 +93,13 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 #### 3. compile 실행
 
 * maven의 lifecycle에서 컴파일을 실행한다.
-  * ![](<../.gitbook/assets/image (6).png>)
+  * ![](<../.gitbook/assets/image (6) (4).png>)
 * **target/generated-sources/java** 밑에 QAccount라는 **클래스가 자동생성**된다.\
   **이는 Account 엔티티에 대한 쿼리 Language를 만들어줄 것이다.**
-  * ![](<../.gitbook/assets/image (11).png>)
+  * ![](<../.gitbook/assets/image (11) (5).png>)
 
 ### 3) 자동생성된 클래스 테스트
 
 테스트 코드에 클래스가 잘 생성되는지 확인한다.
 
-![](<../.gitbook/assets/image (8).png>)
+![](<../.gitbook/assets/image (8) (1).png>)

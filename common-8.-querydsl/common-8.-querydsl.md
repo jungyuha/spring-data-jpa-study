@@ -10,7 +10,7 @@ description: 기본 리포지토리 커스터마이징 안 하고 기본 JpaRepo
 
 **first registered : 2022-09-28 Wed**
 
-**last modified : 2022-09-28 Wed**
+**last modified : 2022-09-29 Thu**
 
 ## \[1] 레파지토리에 **QuerydslPredicateExecutor 추가**
 
@@ -26,7 +26,11 @@ public interface AccountRepository extends JpaRepository<Account, Long>
 QuerydslPredicateExecutor를 추가하면 **QuerydslPredicateExecutor**가 제공하는 **** 다음 2가지 메서드를\
 사용할 수 있다.
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (1).png>)
+
+#### **QuerydslPredicateExecutor**가 제공하는 **** 메서드
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p> <strong>QuerydslPredicateExecutor</strong>가 제공하는 <strong></strong> 메서드</p></figcaption></figure>
 
 ## \[2] queryDSL 작성하기
 
@@ -40,4 +44,4 @@ QuerydslPredicateExecutor를 추가하면 **QuerydslPredicateExecutor**가 제�
 
 #### 2. findOne 메서드로 predicate를 넣어 쿼리 Language를 만든다.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p> 테스트 코드</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption><p> 테스트 코드</p></figcaption></figure>

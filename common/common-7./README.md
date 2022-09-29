@@ -47,7 +47,7 @@ description: 스프링 데이터 Common이 제공하는  도메인 이벤트 퍼
 
 추후에는 실제로 Post에서 이벤트가 발생되도록 구현해볼 것이다.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### 5. 이벤트 리스너 생성하기1 : ApplicationListener 클래스 상속받아 사용하기
 
@@ -81,7 +81,7 @@ ApplicationListener 클래스를 상속받지 않고도 @EventListener 클래스
 
 **만약 빈으로 등록이 안되어있다면 아무리 이벤트가 생성되어도 리스너가 없으니 반응하지 않는다.**
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption><p> @EventListener 클래스를 상속</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption><p> @EventListener 클래스를 상속</p></figcaption></figure>
 
 ### 5-2. 이벤트 리스너 생성하기 : Bean 설정 파일에 직접 구현하기
 

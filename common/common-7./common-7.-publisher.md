@@ -33,7 +33,7 @@ description: 스프링 데이터 Common 7. 스프링 데이터의 도메인 이�
 
 **AbstractAggregateRoot** 안에는 이미 위 2개의 어노테이션을 가지고 있는 메서드가 구현되어있다.
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption><p><strong>AbstractAggregateRoot</strong> 안  2개의 어노테이션</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26) (1).png" alt=""><figcaption><p><strong>AbstractAggregateRoot</strong> 안  2개의 어노테이션</p></figcaption></figure>
 
 이로써 직접 이벤트 퍼블리싱 기능을 구현하지 않아도 된다. **save할 때 이벤트를 만들어서 넣기만 하면 된다.**
 
@@ -45,7 +45,7 @@ post에 publish 메서드를 만든 뒤 이 안에서 이벤트가 발생한다�
 
 ### 2. 이벤트 생성 및 등록하기
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption><p> publish 메서드 생성 , 이벤트 생성 및 등록 </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (2).png" alt=""><figcaption><p> publish 메서드 생성 , 이벤트 생성 및 등록 </p></figcaption></figure>
 
 일전에 만든 **PostPublishedEvent**의 인스턴스를 생성한 뒤
 
@@ -53,7 +53,7 @@ post에 publish 메서드를 만든 뒤 이 안에서 이벤트가 발생한다�
 
 ### 3. 이벤트 발생시키기
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p> 이벤트 발생시키기</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (6).png" alt=""><figcaption><p> 이벤트 발생시키기</p></figcaption></figure>
 
 이벤트를 만들어서 넣어주기만 하면 **save할 때** 자동으로 aggregate안에 모아져있던 이벤트를 모두 발생시킨다.&#x20;
 

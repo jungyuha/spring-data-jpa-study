@@ -2,7 +2,7 @@
 description: 기본 리포지토리 커스터마이징을 한 레포지토리에 QueryDSL을 구현하는 방법
 ---
 
-# 스프링 데이터 Common 8. QueryDSL 응용 구현하기
+# 스프링 데이터 Common 8. QueryDSL 응용 구현하기(구버전)
 
 **기록 ✍️**
 
@@ -10,12 +10,13 @@ description: 기본 리포지토리 커스터마이징을 한 레포지토리에
 
 **first registered : 2022-09-28 Wed**
 
-**last modified : 2022-09-28 Wed**
+**last modified : 2022-09-29 Thu**
 
 ## 이번 단원의 목표
 
-****[**스프링 데이터 Common 6. 기본 리포지토리 커스터마이징하기**](../common/common-6..md) 단원에서 만든 PostRepository에 queryDSL을\
-적용해 보도록 한다.
+* [**스프링 데이터 Common 6. 기본 리포지토리 커스터마이징하기**](../common/common-6..md) 단원에서 만든 PostRepository에 queryDSL을\
+  적용해 보도록 한다.
+* **스프링 데이터 Common 8. QueryDSL 응용 구현하기(구버전)**은 커스텀 레파지토리의 **기본 구현체인 SimpleJpaRepository을 QuerydslPredicateExecutor의 구현체인 QueryDslJpaRepository 인터페이스로 대신해 상속받는 버전이다.**
 
 ## \[1] QueryDSL 셋팅하기
 
@@ -67,10 +68,10 @@ description: 기본 리포지토리 커스터마이징을 한 레포지토리에
 #### 3. compile 실행
 
 * maven의 lifecycle에서 컴파일을 실행한다.
-  * ![](<../.gitbook/assets/image (6).png>)
+  * ![](<../.gitbook/assets/image (6) (4).png>)
 * **target/generated-sources/java** 밑에 QPost라는 **클래스가 자동생성**된다.\
   **이는 Post 엔티티에 대한 쿼리 Language를 만들어줄 것이다.**
-  * ![](<../.gitbook/assets/image (1).png>)
+  * ![](<../.gitbook/assets/image (1) (1).png>)
 
 ## \[2] 레파지토리에 **QuerydslPredicateExecutor 추가**
 
@@ -88,7 +89,7 @@ public interface PostRepository<Post,Long> extends MyRepository<Post, Long>
 
 ### 1) 테스트 결과 : 에러
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption><p> 에러가 난다.</p></figcaption></figure>
 
@@ -97,7 +98,7 @@ public interface PostRepository<Post,Long> extends MyRepository<Post, Long>
   * **QuerydslPredicateExecutor 인터페이스에 대한 구현체는 기본 JpaRepository가 가지고 있기 때문이다.**
     * ****![](<../.gitbook/assets/image (25).png>)****
   * **하지만 PostRepository에서 쓰고있는 기본 구현체는 SimpleMyRepository이다.**
-    *   **SimpleMyRepository에서 QuerydslPredicateExecutor인터페이스의 구현체를 구현하지 않다.**
+    *   **SimpleMyRepository에서 QuerydslPredicateExecutor인터페이스의 구현체를 구현하지 않고다.**
 
         <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
     *   **SimpleMyRepository의 기본 구현체인 SimpleJpaRepository가**\

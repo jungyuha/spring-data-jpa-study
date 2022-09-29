@@ -44,7 +44,7 @@ description: 스프링 데이터 Common 5. 커스텀 리포지토리 만들기
 
 ### 3) Repository 생성
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 4) 테스트 코드 생성
 
