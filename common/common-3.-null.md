@@ -20,7 +20,7 @@ description: 스프링 데이터 Common이 지원하는 Null 처리 방법
 
 ### 1) 리턴값이 Optional인 경우
 
-<figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p> 단일 리턴값이 Optional인 경우</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (2) (2).png" alt=""><figcaption><p> 단일 리턴값이 Optional인 경우</p></figcaption></figure>
 
 ### 2) 리턴값이 Optional이 아닌 경우
 
@@ -72,7 +72,7 @@ description: 스프링 데이터 Common이 지원하는 Null 처리 방법
     <figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p> 데이터 삽입시 Not Null 제약조건 추가</p></figcaption></figure>
 *   **@Nullable**
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (3) (1).png" alt=""><figcaption><p> 반환되는 값이 Null이 될 수 있음을 명시한다.</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (3).png" alt=""><figcaption><p> 반환되는 값이 Null이 될 수 있음을 명시한다.</p></figcaption></figure>
 
 
 * **@NonNullApi** &#x20;

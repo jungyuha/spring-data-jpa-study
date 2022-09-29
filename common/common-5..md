@@ -164,7 +164,7 @@ entity manager는 이미 해당 객체를 removed 상태로 변경시킨 상태�
 
 인터페이스 구현체를 만들 때 기본 접미어로 Impl을 사용한다.이 때 Impl말고 다른 단어로 대체할 수 있다.
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>기본 접미어 Impl</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption><p>기본 접미어 Impl</p></figcaption></figure>
 
 ### 애플리케이션 메인에서 @EnableJpaRepositories 재설정한다.
 

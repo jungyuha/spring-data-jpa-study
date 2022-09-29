@@ -36,7 +36,7 @@ description: 기본 리포지토리 커스터마이징을 한 레포지토리에
 ```
 
 * queryDSL은 스프링부트가 의존성 관리를 해준다.따라서 pom.xml에 따로 버전을 명시하지 않아도 된다.
-  * <img src="../.gitbook/assets/image (30).png" alt="" data-size="original">
+  * <img src="../.gitbook/assets/image (30) (1).png" alt="" data-size="original">
     * **query-apt 모듈**은 쿼리를 생성해준다. :  엔티티 모델을 보고 그 모델에 맞는 **쿼리 Language를 만든다.**
       * 이를 위해서는 **플러그인 설정이 필요**하다.&#x20;
 
@@ -68,10 +68,10 @@ description: 기본 리포지토리 커스터마이징을 한 레포지토리에
 #### 3. compile 실행
 
 * maven의 lifecycle에서 컴파일을 실행한다.
-  * ![](<../.gitbook/assets/image (6) (4).png>)
+  * ![](<../.gitbook/assets/image (6) (2).png>)
 * **target/generated-sources/java** 밑에 QPost라는 **클래스가 자동생성**된다.\
   **이는 Post 엔티티에 대한 쿼리 Language를 만들어줄 것이다.**
-  * ![](<../.gitbook/assets/image (1) (1).png>)
+  * ![](<../.gitbook/assets/image (1) (5).png>)
 
 ## \[2] 레파지토리에 **QuerydslPredicateExecutor 추가**
 
@@ -91,7 +91,7 @@ public interface PostRepository<Post,Long> extends MyRepository<Post, Long>
 
 <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption><p> 에러가 난다.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (33) (1).png" alt=""><figcaption><p> 에러가 난다.</p></figcaption></figure>
 
 * **에러가 나는 이유** :&#x20;
   * **기본 Repository를 커스터마이징 했기 때문이다 = JpaRepository 의 구현체가 없기 때문이다.**
