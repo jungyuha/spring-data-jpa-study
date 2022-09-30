@@ -87,7 +87,7 @@ JpaRepository의 기능들도 구현할 수 있도록 JpaRepository를 상속받
 
 CustomRepository의 Contains 기능을 참조할 수 있게 된다.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p> CustomRepository를 상속받은 BookRepository</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (4).png" alt=""><figcaption><p> CustomRepository를 상속받은 BookRepository</p></figcaption></figure>
 
 #### 하지만 애플리케이션은 아직 CustomRepository의 Contains 구현체를 알지 못한다.
 
@@ -113,11 +113,11 @@ CustomRepository의 Contains 기능을 참조할 수 있게 된다.
 
 #### 다음과 같이 SimpleMyRepsitory 대신 **QuerydslPredicateExecutor의 구현체인 QueryDslJpaRepository 인터페이스를 상속받아 해결했었다.**
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (5).png" alt=""><figcaption></figcaption></figure>
 
 #### **하지만 버전이 바뀌면서** 공통 구현체 CustomRepositoryImpl에서 SimpleMyRepsitory를 상속받아도 QueryDSL은 잘 동작한다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (33) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### SimpleMyRepsitory를 상속받아도 QueryDSL이 잘 동작하는 이유
 

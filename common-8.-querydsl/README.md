@@ -47,7 +47,9 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 
 ### 1) 의존성 추가
 
-#### 1. pom.xml에 의존성 추가하기
+#### 1. 의존성 추가하기
+
+#### Maven : pom.xml
 
 ```xml
         <dependency>
@@ -60,12 +62,30 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
         </dependency>
 ```
 
+#### Gradle : build.gradle
+
+<pre class="language-properties"><code class="lang-properties">buildscript {
+    ext {
+        queryDslVersion = "5.0.0"
+    }
+}
+
+<strong>dependencies {
+</strong>    implementation "com.querydsl:querydsl-jpa:${queryDslVersion}"
+    implementation "com.querydsl:querydsl-apt:${queryDslVersion}"
+    //...
+}</code></pre>
+
 * queryDSL은 스프링부트가 의존성 관리를 해준다.따라서 pom.xml에 따로 버전을 명시하지 않아도 된다.
   * <img src="../.gitbook/assets/image (30) (1).png" alt="" data-size="original">
     * **query-apt 모듈**은 쿼리를 생성해준다. :  엔티티 모델을 보고 그 모델에 맞는 **쿼리 Language를 만든다.**
       * 이를 위해서는 **플러그인 설정이 필요**하다.&#x20;
 
 #### 2. 플러그인 설정하기
+
+#### Maven : pom.xml
+
+* **querydsl.apt.jpa.JPAAnnotationProcessor**를 사용할 것임을 명시한다. ****&#x20;
 
 ```xml
 <plugin>
@@ -86,13 +106,65 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 </plugin>
 ```
 
+#### Gradle : build.gradle
+
+```properties
+buildscript {
+	dependencies {
+		classpath("gradle.plugin.com.ewerk.gradle.plugins:querydsl-plugin:1.0.10")
+	}
+}
+
+apply plugin: "com.ewerk.gradle.plugins.querydsl"
+
+dependencies {
+	//..
+	implementation 'com.querydsl:querydsl-jpa'
+	implementation 'com.querydsl:querydsl-apt'
+}
+
+//querydsl 추가
+//def querydslDir = 'src/main/generated'
+def querydslDir = "$buildDir/generated/querydsl"
+querydsl {
+   library = "com.querydsl:querydsl-apt"
+   jpa = true
+   querydslSourcesDir = querydslDir
+}
+sourceSets {
+   main {
+      java {
+         srcDirs = ['src/main/java', querydslDir]
+      }
+   }
+}
+compileQuerydsl{
+   options.annotationProcessorPath = configurations.querydsl
+}
+configurations {
+   querydsl.extendsFrom compileClasspath
+}
+```
+
 * 이 플러그인은 버전관리가 되지 않기 때문에 버전을 직접 명시해야한다.
 * 자동생성되는 클래스들은 **target/generated-sources/java** 밑에 두도록 설정한다.
-* **querydsl.apt.jpa.JPAAnnotationProcessor**를 사용할 것임을 명시한다. ****&#x20;
 
 #### 3. compile 실행
 
-* maven의 lifecycle에서 컴파일을 실행한다.
+#### Gradle
+
+* Gradle tasks의 메뉴에 들어가 **build의 오른쪽 버튼을 클릭해 Run gradle Tasks를** 실행한다.
+
+![](<../.gitbook/assets/image (20).png>)
+
+![](<../.gitbook/assets/image (2).png>)
+
+**build/generated-sources/querydsl** 밑에 Q로 시작하는 **클래스가 자동생성**된다.\
+**이는 각 엔티티에 대한 쿼리 Language를 만들어줄 것이다.**
+
+#### 메이븐
+
+* Maven의 lifecycle 메뉴에서 컴파일을 실행한다.
   * ![](<../.gitbook/assets/image (6) (2).png>)
 * **target/generated-sources/java** 밑에 QAccount라는 **클래스가 자동생성**된다.\
   **이는 Account 엔티티에 대한 쿼리 Language를 만들어줄 것이다.**

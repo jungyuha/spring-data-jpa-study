@@ -53,7 +53,7 @@ post에 publish 메서드를 만든 뒤 이 안에서 이벤트가 발생한다�
 
 ### 3. 이벤트 발생시키기
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p> 이벤트 발생시키기</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (4).png" alt=""><figcaption><p> 이벤트 발생시키기</p></figcaption></figure>
 
 이벤트를 만들어서 넣어주기만 하면 **save할 때** 자동으로 aggregate안에 모아져있던 이벤트를 모두 발생시킨다.&#x20;
 
