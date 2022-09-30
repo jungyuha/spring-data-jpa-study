@@ -125,7 +125,7 @@ dependencies {
 
 //querydsl 추가
 //def querydslDir = 'src/main/generated'
-def querydslDir = "$buildDir/generated/querydsl"
+def querydslDir = "src/main/generated/queryDsl"
 querydsl {
    library = "com.querydsl:querydsl-apt"
    jpa = true
@@ -148,6 +148,7 @@ configurations {
 
 * 이 플러그인은 버전관리가 되지 않기 때문에 버전을 직접 명시해야한다.
 * 자동생성되는 클래스들은 **target/generated-sources/java** 밑에 두도록 설정한다.
+* 이클립스에서 Q클래스 Import 안되는 오류 해결 : [https://pamyferret.tistory.com/11](https://pamyferret.tistory.com/11)
 
 #### 3. compile 실행
 
