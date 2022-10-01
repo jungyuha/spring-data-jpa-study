@@ -15,6 +15,7 @@
 ***
 
 * [스프링 데이터 Common 8. QueryDSL 특징 , 연동하기](common-8.-querydsl/README.md)
+  * [이클립스 , gradle 환경 내 QueryDSL 연동하기](common-8.-querydsl/gradle-querydsl.md)
   * [스프링 데이터 Common 8. QueryDSL 기본 구현하기](common-8.-querydsl/common-8.-querydsl.md)
   * [스프링 데이터 Common 8. QueryDSL 응용 구현하기(구버전)](common-8.-querydsl/common-8.-querydsl-1.md)
   * [스프링 데이터 Common 8. QueryDSL 응용 구현하기(신버전)](common-8.-querydsl/common-8.-querydsl-2.md)

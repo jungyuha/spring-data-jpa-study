@@ -43,7 +43,7 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 
 #### 3. 테스트 파일 생성
 
-![](<../.gitbook/assets/image (23).png>)
+![](<../.gitbook/assets/image (23) (2).png>)
 
 ### 1) 의존성 추가
 
@@ -124,7 +124,6 @@ dependencies {
 }
 
 //querydsl 추가
-//def querydslDir = 'src/main/generated'
 def querydslDir = "src/main/generated/queryDsl"
 querydsl {
    library = "com.querydsl:querydsl-apt"
@@ -176,3 +175,4 @@ configurations {
 테스트 코드에 클래스가 잘 생성되는지 확인한다.
 
 ![](<../.gitbook/assets/image (8) (2).png>)
+

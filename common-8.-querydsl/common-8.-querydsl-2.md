@@ -32,7 +32,7 @@ description: 기본 리포지토리 커스터마이징을 한 레포지토리에
 
 #### 3. 테스트 파일 생성
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 ## \[2] 레파지토리에 **QuerydslPredicateExecutor 추가**
 
@@ -53,7 +53,7 @@ JpaRepository의 기능들도 구현할 수 있도록 JpaRepository를 상속받
 
 ## \[4] 공통(베이스) 레파지토리의 구현체 생성
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
 * JpaRepository에 관한 기능들은 SimpleJpaRepository에 구현되어 있다.(따로 구현할 필요가 없다.)
 * 생성자를 만들어 빈을 주입받고 전달해주어야 한다.
@@ -121,7 +121,7 @@ CustomRepository의 Contains 기능을 참조할 수 있게 된다.
 
 ### SimpleMyRepsitory를 상속받아도 QueryDSL이 잘 동작하는 이유
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p> <strong>QuerydslPredicateExecutor</strong>가 제공하는 <strong></strong> 메서드</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (6).png" alt=""><figcaption><p> <strong>QuerydslPredicateExecutor</strong>가 제공하는 <strong></strong> 메서드</p></figcaption></figure>
 
 **QuerydslPredicateExecutor의 구현체가 Extension처럼 확장 구현체를 쓰듯이 변경되었기 때문이다.**
 

@@ -30,7 +30,7 @@ QuerydslPredicateExecutor를 추가하면 **QuerydslPredicateExecutor**가 제�
 
 #### **QuerydslPredicateExecutor**가 제공하는 **** 메서드
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p> <strong>QuerydslPredicateExecutor</strong>가 제공하는 <strong></strong> 메서드</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (6).png" alt=""><figcaption><p> <strong>QuerydslPredicateExecutor</strong>가 제공하는 <strong></strong> 메서드</p></figcaption></figure>
 
 ## \[2] queryDSL 작성하기
 
