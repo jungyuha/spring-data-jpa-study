@@ -20,6 +20,7 @@
   * [스프링 데이터 Common 8. QueryDSL 응용 구현하기(구버전)](common-8.-querydsl/common-8.-querydsl-1.md)
   * [스프링 데이터 Common 8. QueryDSL 응용 구현하기(신버전)](common-8.-querydsl/common-8.-querydsl-2.md)
   * [스프링 데이터 Common 8. Extension으로 QueryDSL 구현하기](common-8.-querydsl/common-8.-extension-querydsl.md)
+* [스프링 데이터 Common 9. 웹 기능](common-9..md)
 
 ## ModelMapper
 
