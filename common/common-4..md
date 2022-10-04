@@ -149,7 +149,7 @@ List<Comment> findByCommentContainsIgnoreCaseAndLikeCountGreaterThan(String keyw
 
 <figure><img src="../.gitbook/assets/image (13) (2) (1).png" alt=""><figcaption><p><strong>쿼리 메서드</strong></p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (2) (2).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
 
 
 
@@ -182,7 +182,7 @@ Page<Comment> findByCommentContainsIgnoreCase("Spring" , pageRequest);
 * Pagerequest 타입은 static한 세 가지 타입을 지원한다.
   *   **page , size**를 제공하는 타입&#x20;
 
-      <figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
   *   **page , size , sort**를 제공하는 타입
 
 

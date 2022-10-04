@@ -35,15 +35,15 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 
 #### 1 . 엔티티 생성 : Account 라는 엔티티를 생성한다.
 
-![](<../.gitbook/assets/image (19).png>)
+![](<../.gitbook/assets/image (19) (3).png>)
 
 #### 2. 레파지토리 생성 : JpaRepository를 상속받아 AccountRepository를 생성한다.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p> AccountRepository</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p> AccountRepository</p></figcaption></figure>
 
 #### 3. 테스트 파일 생성
 
-![](<../.gitbook/assets/image (23) (2).png>)
+![](<../.gitbook/assets/image (23) (2) (1).png>)
 
 ### 1) 의존성 추가
 
@@ -155,9 +155,9 @@ configurations {
 
 * Gradle tasks의 메뉴에 들어가 **build의 오른쪽 버튼을 클릭해 Run gradle Tasks를** 실행한다.
 
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (20) (2).png>)
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (3).png>)
 
 **build/generated-sources/querydsl** 밑에 Q로 시작하는 **클래스가 자동생성**된다.\
 **이는 각 엔티티에 대한 쿼리 Language를 만들어줄 것이다.**

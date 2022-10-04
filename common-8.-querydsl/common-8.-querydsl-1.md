@@ -96,11 +96,11 @@ public interface PostRepository<Post,Long> extends MyRepository<Post, Long>
 * **에러가 나는 이유** :&#x20;
   * **기본 Repository를 커스터마이징 했기 때문이다 = JpaRepository 의 구현체가 없기 때문이다.**
   * **QuerydslPredicateExecutor 인터페이스에 대한 구현체는 기본 JpaRepository가 가지고 있기 때문이다.**
-    * ****![](<../.gitbook/assets/image (25) (2).png>)****
+    * ****![](<../.gitbook/assets/image (25).png>)****
   * **하지만 PostRepository에서 쓰고있는 기본 구현체는 SimpleMyRepository이다.**
     *   **SimpleMyRepository에서 QuerydslPredicateExecutor인터페이스의 구현체를 구현하지 않고다.**
 
-        <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
     *   **SimpleMyRepository의 기본 구현체인 SimpleJpaRepository가**\
         **QuerydslPredicateExecutor의 구현체를 구현하고 있긴 하다.(QueryDslJpaRepository에서)**
 

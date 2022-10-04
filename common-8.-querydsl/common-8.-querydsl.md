@@ -40,8 +40,8 @@ QuerydslPredicateExecutor를 추가하면 **QuerydslPredicateExecutor**가 제�
 
 #### \[예시] account 엔티티의 firstName이 containsIgnore로 'keesun'를 가짐과 동시에 lastName이 startWith로 'balk'을 가지는 쿼리를 생성해본다.
 
-<figure><img src="../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. findOne 메서드로 predicate를 넣어 쿼리 Language를 만든다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p> 테스트 코드</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p> 테스트 코드</p></figcaption></figure>

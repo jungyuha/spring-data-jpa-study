@@ -24,11 +24,11 @@ description: 기본 리포지토리 커스터마이징을 한 레포지토리에
 
 #### 1 . 엔티티 생성 : Book 이라는 엔티티를 생성한다.
 
-![](<../.gitbook/assets/image (36).png>)
+![](<../.gitbook/assets/image (36) (1).png>)
 
 #### 2. 레파지토리 생성 : JpaRepository를 상속받아 BookRepository를 생성한다.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p> BookRepository</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (4).png" alt=""><figcaption><p> BookRepository</p></figcaption></figure>
 
 #### 3. 테스트 파일 생성
 
@@ -49,7 +49,7 @@ public interface BookRepository extends JpaRepository<Book, Long>
 
 JpaRepository의 기능들도 구현할 수 있도록 JpaRepository를 상속받도록 한다.
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## \[4] 공통(베이스) 레파지토리의 구현체 생성
 
@@ -81,7 +81,7 @@ JpaRepository의 기능들도 구현할 수 있도록 JpaRepository를 상속받
 
 #### 기존의 BookRepository의 모습이다.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p> 기존의 BookRepository</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (4).png" alt=""><figcaption><p> 기존의 BookRepository</p></figcaption></figure>
 
 #### JpaRepository대신 CustomRepository를 상속받은 BookRepository의 모습이다.
 
@@ -103,7 +103,7 @@ CustomRepository의 Contains 기능을 참조할 수 있게 된다.
 
 #### [common-8.-querydsl-1.md](common-8.-querydsl-1.md "mention") 에서는 다음과 같은 이유로 동작하지 않았어서...
 
-<figure><img src="../.gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ## \[3] queryDSL 작성하기
 

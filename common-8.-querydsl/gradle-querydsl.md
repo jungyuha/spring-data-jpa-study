@@ -75,9 +75,9 @@ configurations {
 
 Gradle tasks의 메뉴에 들어가 **build의 오른쪽 버튼을 클릭해 Run gradle Tasks를** 실행한다.
 
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (20) (2).png>)
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (3).png>)
 
 **build/generated-sources/querydsl** 밑에 Q로 시작하는 **클래스가 자동생성**된다.\
 **이는 각 엔티티에 대한 쿼리 Language를 만들어줄 것이다.**
@@ -88,25 +88,25 @@ Gradle tasks의 메뉴에 들어가 **build의 오른쪽 버튼을 클릭해 Run
 
 프로젝트를 우클릭하여  **build Path > Configure Build Path** 를 클릭한다.
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Step2
 
 Configure Build Path 창이 열리면  **Java Build Path > Source 탭에서 Add Folder...** 를 클릭한다.
 
-<figure><img src="../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### step3&#x20;
 
 #### Source Folder 창에서  생성된 Q 클래스가 있는 폴더를 선택한다.
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (7).png>)
 
 ## \[4] Q클래스 Import 해결
 
 #### Source Folder 창에서  생성된 Q 클래스가 있는 폴더를 선택까지 마치면 Q 클래스가 있는 'src/main/generated/queryDsl' 폴더가 import 된다.
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (41).png>)
 
 #### 테스트 코드에 클래스가 잘 생성되는지 확인한다.
 
