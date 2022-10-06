@@ -77,7 +77,7 @@ JpaRepository의 기능들도 구현할 수 있도록 JpaRepository를 상속받
 
 **테스트코드에 일전에 만든 Custon 레포지토리의 contains 기능을 사용하려면 Custom 레포지토리를 기본적으로 사용할 수 있도록 설정해야 한다.**&#x20;
 
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption><p> <strong>여기에 contains 기능도 넣어보자구</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (34) (1).png" alt=""><figcaption><p> <strong>여기에 contains 기능도 넣어보자구</strong></p></figcaption></figure>
 
 #### 기존의 BookRepository의 모습이다.
 
@@ -99,17 +99,17 @@ CustomRepository의 Contains 기능을 참조할 수 있게 된다.
 
 테스트 코드에 queryDSL을 작성한다.
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### [common-8.-querydsl-1.md](common-8.-querydsl-1.md "mention") 에서는 다음과 같은 이유로 동작하지 않았어서...
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## \[3] queryDSL 작성하기
 
 테스트 코드에 queryDSL을 작성한다.
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 다음과 같이 SimpleMyRepsitory 대신 **QuerydslPredicateExecutor의 구현체인 QueryDslJpaRepository 인터페이스를 상속받아 해결했었다.**
 

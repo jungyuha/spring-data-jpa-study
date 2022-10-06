@@ -21,7 +21,7 @@ description: '스프링 데이터 Common 9. 웹 기능 : DomainClassConverter'
 
 ### 1) 의존성 추가
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p> 간단한 의존성 추가</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p> 간단한 의존성 추가</p></figcaption></figure>
 
 * **Spring JPA 추가** : spring-boot-starter-data-jpa
 * **Spring Web 추가** : spring-boot-starter-web
@@ -34,13 +34,13 @@ description: '스프링 데이터 Common 9. 웹 기능 : DomainClassConverter'
 
 ### 3) Repository 생성  : PostRepository
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (4).png" alt=""><figcaption></figcaption></figure>
 
 ### 4) Controller 생성 : PostController
 
 #### 1. Post 조회 핸들러 생성
 
-<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. 레파지토리 선언&#x20;
 
@@ -48,7 +48,7 @@ description: '스프링 데이터 Common 9. 웹 기능 : DomainClassConverter'
   * ![](<../.gitbook/assets/image (15).png>)
 *   레파지토리 선언 방법 (2) : **생성자를 통한 주입**
 
-    <figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (13) (4).png" alt=""><figcaption></figcaption></figure>
 
 ## \[2] **MockMvc**를 통해 Post 조회 테스트 작성하기
 
@@ -56,7 +56,7 @@ description: '스프링 데이터 Common 9. 웹 기능 : DomainClassConverter'
 
 새로 저장한 Post의 Id를 요청하여 **MockMvc**를 통해 해당 Post를 조회하는 테스트를 작성한다.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2) 테스트 결과
 
@@ -86,6 +86,6 @@ description: '스프링 데이터 Common 9. 웹 기능 : DomainClassConverter'
   *   **단 , @PathVariable에 "id"를 꼭 명시해주어야한다.** \
       **왜냐하면 더이상 @PathVariable안의 변수명과 Post 타입의 변수명인 "post"가 일치하지 않기 때문이다.**
 
-      <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption><p> <strong>@PathVariable을 Post로 바꾸고 findById</strong> <strong>메서드를 생략해도</strong> 결과는 똑같다.</p></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (19) (2).png" alt=""><figcaption><p> <strong>@PathVariable을 Post로 바꾸고 findById</strong> <strong>메서드를 생략해도</strong> 결과는 똑같다.</p></figcaption></figure>
 
 #### 2. ToIdConverter : 어떤 한 엔티티의 Id 타입으로 변환한다.

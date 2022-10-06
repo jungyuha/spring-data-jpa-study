@@ -17,7 +17,7 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 * 조건문을 표현하는 방법이 타입 세이프하다.
 * 조건문들을 조합할 수 있다.
 * 쿼리를 자바 코드로 짤 수 있다.
-  * ![](<../.gitbook/assets/image (32) (1).png>)
+  * ![](<../.gitbook/assets/image (32).png>)
 * **Predicate 인터페이스**로 **** 조건문들을 표현한다.
   * **Predicate 인터페이스는 서로** 조합할 수도 있고 또는 별도의 클래스에 모아서 따로 관리할 수도 있다.
 * 조건이 많아질수록 쿼리메서드가 굉장히 복잡해지는데 이 때 QueryDSL을 쓰면 된다.
@@ -39,7 +39,7 @@ description: 스프링 데이터 Common 8. QueryDSL 특징 , 셋팅하기
 
 #### 2. 레파지토리 생성 : JpaRepository를 상속받아 AccountRepository를 생성한다.
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p> AccountRepository</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (3).png" alt=""><figcaption><p> AccountRepository</p></figcaption></figure>
 
 #### 3. 테스트 파일 생성
 
@@ -168,11 +168,11 @@ configurations {
   * ![](<../.gitbook/assets/image (6) (2).png>)
 * **target/generated-sources/java** 밑에 QAccount라는 **클래스가 자동생성**된다.\
   **이는 Account 엔티티에 대한 쿼리 Language를 만들어줄 것이다.**
-  * ![](<../.gitbook/assets/image (11) (1).png>)
+  * ![](<../.gitbook/assets/image (11) (5).png>)
 
 ### 3) 자동생성된 클래스 테스트
 
 테스트 코드에 클래스가 잘 생성되는지 확인한다.
 
-![](<../.gitbook/assets/image (8) (2) (2).png>)
+![](<../.gitbook/assets/image (8) (2).png>)
 

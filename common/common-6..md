@@ -26,7 +26,7 @@ description: 모든 Entity 레파지토리에 추가하거나 오버라이딩하
 
 기존에는 JpaRepository를 상속받아 사용했다.
 
-<figure><img src="../.gitbook/assets/image (6) (1) (3).png" alt=""><figcaption><p> JpaRepository를 상속받아 사용</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p> JpaRepository를 상속받아 사용</p></figcaption></figure>
 
 #### 모든 Entity에 적용될 Repository를 생성한다.이 때 JpaRepository를 상속받아 만든다.
 

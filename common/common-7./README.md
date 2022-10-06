@@ -29,7 +29,7 @@ description: 스프링 데이터 Common이 제공하는  도메인 이벤트 퍼
 
 **ApplicationEvent**를 상속받아 **PostPublishedEvent** 라는 클래스를 생성한다.
 
-<figure><img src="../../.gitbook/assets/image (19) (2).png" alt=""><figcaption><p><strong>ApplicationEvent</strong>를 상속 </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (2) (1).png" alt=""><figcaption><p><strong>ApplicationEvent</strong>를 상속 </p></figcaption></figure>
 
 ### 2. 이벤트를 발생시키는 곳이 Post임을 나타낸다.
 
@@ -97,7 +97,7 @@ ApplicationListener 클래스를 상속받지 않고도 @EventListener 클래스
 2. **이벤트 퍼블리셔**가 이 이벤트를 던지게 되면
 3. **리스너**가 이벤트를 잡아 **메서드를 실행**한다.
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p> 이벤트 발생</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (2).png" alt=""><figcaption><p> 이벤트 발생</p></figcaption></figure>
 
 
 

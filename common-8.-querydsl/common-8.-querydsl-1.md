@@ -89,7 +89,7 @@ public interface PostRepository<Post,Long> extends MyRepository<Post, Long>
 
 ### 1) 테스트 결과 : 에러
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (33) (1).png" alt=""><figcaption><p> 에러가 난다.</p></figcaption></figure>
 
@@ -104,10 +104,10 @@ public interface PostRepository<Post,Long> extends MyRepository<Post, Long>
     *   **SimpleMyRepository의 기본 구현체인 SimpleJpaRepository가**\
         **QuerydslPredicateExecutor의 구현체를 구현하고 있긴 하다.(QueryDslJpaRepository에서)**
 
-        <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
     *   **하지만 main에서 명시적으로 다음과 같이 기본으로 설정해주었기 때문에 SimpleJpaRepository의 구현체보다 앞서 적용이 되어서 QuerydslPredicateExecutor의 구현체가 보이지 않는 것이다.**
 
-        <figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ### 2) 에러 해결하는법
 

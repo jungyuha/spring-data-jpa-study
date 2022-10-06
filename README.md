@@ -32,7 +32,7 @@ description: '관계 설정하기 : 1대 다 맵핑'
 #### 2. Study 엔티티
 
 * id , username , password 필드가 있다.
-  * ![](.gitbook/assets/image.png)
+  * ![](<.gitbook/assets/image (16).png>)
 
 ### 2) 관계 맺기
 
@@ -41,11 +41,11 @@ description: '관계 설정하기 : 1대 다 맵핑'
 * 하나의 Account는 여러개의 Study를 가질 수 있다.\
   따라서 **Account 입장에서는 1대 다(one to many) 맵핑**이된다.
 * 반대로 **Study 입장에서는 다 대 1 (many to one) 맵핑**이 된다.
-  * ![](<.gitbook/assets/image (1).png>)
+  * ![](<.gitbook/assets/image (10).png>)
 
 #### 2. Study에 Account 를 지정하는 테스트 코드 작성하기
 
-![](<.gitbook/assets/image (32).png>)
+<figure><img src=".gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 #### 3. 테스트 결과
 
@@ -53,7 +53,7 @@ description: '관계 설정하기 : 1대 다 맵핑'
 
 **아래와 같이 owner\_id라는 FK가 생성되었다.**
 
-![](<.gitbook/assets/image (5).png>)
+![](<.gitbook/assets/image (44).png>)
 
 ### 3) Many to One 관계의 특징
 
@@ -75,30 +75,30 @@ description: '관계 설정하기 : 1대 다 맵핑'
 
 #### 1. Account 엔티티는  Study 엔티티를 여러개 가지고 있을 수 있으므로 Set 형태로  OneToMany로 선언한다.
 
-<figure><img src=".gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. 주인이 관계를 설정하도록 테스트 코드를 작성한다.
 
 * 이번에는 Account가 관계를 가지고 있으므로 주인이 된다.
 
-<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 #### 3. 테스트 결과
 
 * **Step1** - One to Many는 조인 테이블로 만들어진다. 따라서 총 3개의 테이블이 보여진다.
   * 첫번째 , account 테이블
-    * ![](<.gitbook/assets/image (27).png>)
+    * ![](<.gitbook/assets/image (22).png>)
   * 두번째 , account\_studies 테이블
-    * ![](<.gitbook/assets/image (28).png>)
+    * ![](<.gitbook/assets/image (46).png>)
       * **account의 id와 study의 id 둘다 가지고 있다.**
   * 세번째 , study 테이블
-    * ![](<.gitbook/assets/image (11).png>)
+    * ![](<.gitbook/assets/image (12).png>)
 * **Step 2** - 각 테이블 별로 **FK**가 설정된다.
   *
 
-      <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 * **Step 3** - account , study , account\_studies 테이블 순으로 저장된다.
-  * ![](<.gitbook/assets/image (8).png>)
+  * ![](<.gitbook/assets/image (34).png>)
 
 ### 3) 단방향 One to Many 관계의 특징
 
@@ -115,9 +115,9 @@ description: '관계 설정하기 : 1대 다 맵핑'
 **아래와 같은 경우는 양방향 관계가 아니라 두 개의 단방향 관계이다!!! 즉 , 서로 연관 관계가 없다.**
 
 * &#x20;study쪽에서 오너 정보 (account)를 참조함과 동시에
-  * ![](<.gitbook/assets/image (22).png>)
+  * ![](<.gitbook/assets/image (21).png>)
 * &#x20;account 에서도 account 정보를 참조할 때
-  * ![](<.gitbook/assets/image (6).png>)
+  * ![](<.gitbook/assets/image (11).png>)
 
 ### 2) 양방향 관계로 만들기
 
@@ -127,9 +127,9 @@ description: '관계 설정하기 : 1대 다 맵핑'
   * study 쪽에서 owner라는 필드로 관계를 정의했으므로 one to many쪽에다가 mapped By 속성으로\
     owner 필드를 적는다.
 
-<figure><img src=".gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 3) 양방향 관계의 특징과 주의해야할점
 
@@ -143,37 +143,37 @@ description: '관계 설정하기 : 1대 다 맵핑'
 
 **1-1.테스트 코드**
 
-<figure><img src=".gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 **1-2. 테스트 결과**
 
 * account 테이블엔 관계의 정보가 없다.
-  * ![](<.gitbook/assets/image (48).png>)
+  * ![](<.gitbook/assets/image (6).png>)
 * study 테이블의 FK값에도 정보가 들어오지 않는다.
-  * ![](<.gitbook/assets/image (47).png>)
+  * ![](<.gitbook/assets/image (7).png>)
 
 **2-1.  관계의 주인인 Study가 관계를 맵핑하도록 테스트 코드 작성**
 
 * 객체 지향 관점에서는 양쪽 모두 맵핑해야하므로 둘 다 동시에 맵핑하도록 한다.
 * **account 쪽은 생략해도 별 일 없겠지만 객체 지향 관점을 염두에 두고 꼭 둘이 같이 묶어서 진행하도록 한다.**
 
-<figure><img src=".gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 * account 쪽에 묶어서 구현하는 메서드를 만들어서 구현해도 좋다.
   *   add 메서드 구현하기
 
-      <figure><img src=".gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
   *   &#x20;remove 메서드 또한 같이 묶어서 구현해야한다.
 
-      <figure><img src=".gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
   *   테스트 코드
 
-      <figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **2-2. 테스트 결과**
 
 * study 테이블의 FK값에 정보가 들어온다.
-  * ![](<.gitbook/assets/image (45).png>)
+  * ![](<.gitbook/assets/image (3).png>)
 
 ****
 
