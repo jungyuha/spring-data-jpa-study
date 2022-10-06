@@ -71,7 +71,7 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 
 ### 5) **메소드 이름을 분석해서 만든 쿼리**  테스트 코드 작성 1
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p> Jpa Repository 인터페이스에서 구현한 커스텀한 메서드</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption><p> Jpa Repository 인터페이스에서 구현한 커스텀한 메서드</p></figcaption></figure>
 
 * Jpa Repository 인터페이스에서 구현한 커스텀한 메서드도 추가할 수 있다.
 * 이 예시는 특정한 키워드를 가지고 있는 Post의 목록을 페이징해서 찾는 메서드이다.

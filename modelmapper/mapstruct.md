@@ -28,18 +28,28 @@ description: MapStruct의 개념과 사용법
 
 ### 1) 의존성 추가하기
 
-* 주의해야할 점 : 순서대로 기재해야한다!!
-
 ```properties
+plugins {
+    id "com.diffplug.eclipse.apt" version "3.26.0"
+}
+
 annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.1.Final'
 implementation 'org.mapstruct:mapstruct:1.4.1.Final'
 ```
 
-#### 순서를 지키지 않으면 다음과 같은 오류가 난다.
+#### 하지만 다음과 같은 오류가 났다... 장정 2시간을 헤맸다 .ㅏ하
 
 ```
 - handleRuntimeException : java.lang.ClassNotFoundException: Cannot find implementation for com.yuha.xxxx.mapper.NticMapper
 ```
+
+#### 해결 방법 : build path를 따로 명시해주어야한다. 안해주면 애플리케이션에서 해당 빈을 탐색하지 못한다!
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p> 장정 2시간을 헤맸다 .</p></figcaption></figure>
+
+1. 프로젝트 우클릭 - Bulid path - Configure Builid Path 클릭
+2. Sources 탭에서 Linkk Sourcce... 클릭
+3. Browse를 눌러 'build/generated/sources/annotationProcessor/java/main'을 추가해준다.
 
 ### 2) Custom Mapper 생성하기
 
