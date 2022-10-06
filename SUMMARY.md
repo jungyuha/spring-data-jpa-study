@@ -25,7 +25,8 @@
 
 ## ModelMapper
 
-* [ModelMapper 사용법](modelmapper/modelmapper.md)
+* [ModelMapper 개념과 사용방법](modelmapper/modelmapper.md)
+* [MapStruct의 개념과 사용법](modelmapper/mapstruct.md)
 
 ## etc
 
