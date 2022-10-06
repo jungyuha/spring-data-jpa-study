@@ -103,7 +103,7 @@ CustomRepository의 Contains 기능을 참조할 수 있게 된다.
 
 #### [common-8.-querydsl-1.md](common-8.-querydsl-1.md "mention") 에서는 다음과 같은 이유로 동작하지 않았어서...
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## \[3] queryDSL 작성하기
 

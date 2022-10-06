@@ -110,7 +110,7 @@ Configure Build Path 창이 열리면  **Java Build Path > Source 탭에서 Add 
 
 #### 테스트 코드에 클래스가 잘 생성되는지 확인한다.
 
-![](<../.gitbook/assets/image (8) (2).png>)
+![](<../.gitbook/assets/image (8) (2) (2).png>)
 
 
 

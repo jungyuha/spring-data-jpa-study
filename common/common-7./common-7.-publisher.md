@@ -33,7 +33,7 @@ description: 스프링 데이터 Common 7. 스프링 데이터의 도메인 이�
 
 **AbstractAggregateRoot** 안에는 이미 위 2개의 어노테이션을 가지고 있는 메서드가 구현되어있다.
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption><p><strong>AbstractAggregateRoot</strong> 안  2개의 어노테이션</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26) (1).png" alt=""><figcaption><p><strong>AbstractAggregateRoot</strong> 안  2개의 어노테이션</p></figcaption></figure>
 
 이로써 직접 이벤트 퍼블리싱 기능을 구현하지 않아도 된다. **save할 때 이벤트를 만들어서 넣기만 하면 된다.**
 

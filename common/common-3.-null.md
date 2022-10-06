@@ -31,7 +31,7 @@ description: 스프링 데이터 Common이 지원하는 Null 처리 방법
     <figure><img src="../.gitbook/assets/image (11) (2).png" alt=""><figcaption><p> 리턴값이 Optional이 아닌 경우 null값이 반환된다.</p></figcaption></figure>
 *   Optional이 없는 상태에서 단일값을 조회하는 쿼리 결과는 **그냥 null이 나오므로 isNull로 테스트**한다.
 
-    <figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p> null이 나오므로 isNull로 테스트</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption><p> null이 나오므로 isNull로 테스트</p></figcaption></figure>
 
 #### 리스트 데이터가 반환되는 경우
 

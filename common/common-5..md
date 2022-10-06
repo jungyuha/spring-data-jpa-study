@@ -110,7 +110,7 @@ public interface PostRepository extends JpaRepositoryPost,Long> , PostCutomRepos
 이 때 기본 메서드를 가져오면 인터페이스 내 같은 이름의 함수로 중복이 된다.\
 이 때 **스프링 데이터 Jpa는 항상 커스텀하게 구현한 메서드를 우선순위로 실행한다.**
 
-<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption><p> 스프링 데이터 Repository의 delete 함수를 가져온 모습 </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption><p> 스프링 데이터 Repository의 delete 함수를 가져온 모습 </p></figcaption></figure>
 
 ### 두번째 순서, 가져온 기본 메서드를 직접 구현한다.&#x20;
 
@@ -140,7 +140,7 @@ publicP interface PostRepository extends JpaRepositoryPost,Long> , PostCutomRepo
 
 #### 테스트 코드 2 : 데이터 INSERT 후 SELECT하고 DELETE 하기
 
-<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p> 데이터 INSERT 후 SELECT하고 DELETE 하기</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2) (2).png" alt=""><figcaption><p> 데이터 INSERT 후 SELECT하고 DELETE 하기</p></figcaption></figure>
 
 #### &#x20;테스트 결과 : INSERT를 해야 SELECT가 가능하기때문에 INSERT,SELECT는 처리되나 DELETE는 실행되지 않는다.어차피 롤백되기 때문이다.
 

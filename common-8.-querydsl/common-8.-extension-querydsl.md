@@ -18,7 +18,7 @@ description: 스프링 데이터 Common 8. Extension으로 QueryDSL 구현하기
 
 ## \[1] Extension 만들기&#x20;
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## \[2] QueryDslRepository를 상속받기&#x20;
 
@@ -30,4 +30,4 @@ description: 스프링 데이터 Common 8. Extension으로 QueryDSL 구현하기
 
 이를 통해 복잡한 쿼리를 구현할 수 있다.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>

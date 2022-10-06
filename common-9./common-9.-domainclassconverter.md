@@ -40,7 +40,7 @@ description: '스프링 데이터 Common 9. 웹 기능 : DomainClassConverter'
 
 #### 1. Post 조회 핸들러 생성
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. 레파지토리 선언&#x20;
 
@@ -48,7 +48,7 @@ description: '스프링 데이터 Common 9. 웹 기능 : DomainClassConverter'
   * ![](<../.gitbook/assets/image (15).png>)
 *   레파지토리 선언 방법 (2) : **생성자를 통한 주입**
 
-    <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## \[2] **MockMvc**를 통해 Post 조회 테스트 작성하기
 

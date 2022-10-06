@@ -47,7 +47,7 @@ implementation 'org.mapstruct:mapstruct:1.4.1.Final'
 
 참고링크 : [https://stackoverflow.com/questions/32609755/mapstruct-generated-class-not-being-injected-by-spring-in-jhipster-web-app](https://stackoverflow.com/questions/32609755/mapstruct-generated-class-not-being-injected-by-spring-in-jhipster-web-app)
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p> 장정 2시간을 헤맸다 .</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p> 장정 2시간을 헤맸다 .</p></figcaption></figure>
 
 1. 프로젝트 우클릭 - Bulid path - Configure Builid Path 클릭
 2. Sources 탭에서 Linkk Sourcce... 클릭

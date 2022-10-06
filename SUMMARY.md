@@ -1,8 +1,12 @@
 # Table of contents
 
+## JPA 프로그래밍
+
+* [1대 다 맵핑 관계 개념 및 구현하기](README.md)
+
 ## 스프링 데이터 Common
 
-* [스프링 데이터 Common 1. 리포지토리](README.md)
+* [스프링 데이터 Common 1. 리포지토리](<README (1).md>)
   * [스프링 데이터 Common 1. 리포지토리 테스트 코드 만들기](common/common-1./common-1..md)
 * [스프링 데이터 Common 2. 인터페이스 정의하기](common/common-2..md)
 * [스프링 데이터 Common 3. Null 처리](common/common-3.-null.md)
