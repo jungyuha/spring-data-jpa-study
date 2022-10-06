@@ -45,6 +45,8 @@ implementation 'org.mapstruct:mapstruct:1.4.1.Final'
 
 #### 해결 방법 : build path를 따로 명시해주어야한다. 안해주면 애플리케이션에서 해당 빈을 탐색하지 못한다!
 
+참고링크 : [https://stackoverflow.com/questions/32609755/mapstruct-generated-class-not-being-injected-by-spring-in-jhipster-web-app](https://stackoverflow.com/questions/32609755/mapstruct-generated-class-not-being-injected-by-spring-in-jhipster-web-app)
+
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p> 장정 2시간을 헤맸다 .</p></figcaption></figure>
 
 1. 프로젝트 우클릭 - Bulid path - Configure Builid Path 클릭
