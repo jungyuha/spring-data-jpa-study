@@ -116,7 +116,7 @@ description: '관계 설정하기 : 1대 다 맵핑'
 
 * &#x20;study쪽에서 오너 정보 (account)를 참조함과 동시에
   * ![](<.gitbook/assets/image (21).png>)
-* &#x20;account 에서도 account 정보를 참조할 때
+* &#x20;account 에서도 order 정보를 참조할 때
   * ![](<.gitbook/assets/image (11).png>)
 
 ### 2) 양방향 관계로 만들기
