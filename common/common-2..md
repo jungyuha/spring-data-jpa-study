@@ -31,7 +31,7 @@ description: Repository를 색다른 방법으로 정의해보기
        <figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p> <strong>@RepositoryDefinition</strong>을 사용해서 직접 정의한다.</p></figcaption></figure>
    2.  두번째 단점은 하나하나 정의한 메서드를 테스트 해주어야한다.&#x20;
 
-       <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p> 테스트 코드 작성</p></figcaption></figure>
+       <figure><img src="../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption><p> 테스트 코드 작성</p></figcaption></figure>
    3.  세번째 단점은 각 엔티티마다 공통된 메서드를 하나하나 모두 구현해주어야한다는 것이다.
 
        따라서 공통된 기능을 구현하는 공통 인터페이스를 정의하는 방법이 있다.
@@ -44,7 +44,7 @@ description: Repository를 색다른 방법으로 정의해보기
 
 **Repository 인터페이스를 상속**받고 **@NoRepositoryBean 어노테이션**을 붙인다.
 
-<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p> 공통으로 구현되는 기능들을 모은 MyRepository</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption><p> 공통으로 구현되는 기능들을 모은 MyRepository</p></figcaption></figure>
 
 그리고나서 **** 기존에 사용했던 **@RepositoryDefinition을 지우고** MyRepository 인터페이스를 상속받는다.
 

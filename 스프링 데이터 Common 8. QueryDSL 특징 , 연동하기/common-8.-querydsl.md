@@ -123,31 +123,33 @@ public List<User> getUserList(UserInfoVo userInfoVo) {
 <pre class="language-java"><code class="lang-java">import com.google.common.collect.ImmutableList;
 import com.querydsl.core.BooleanBuilder;
 //...
-<strong>
-</strong><strong>public List&#x3C;User> getUserList(UserInfoVo userInfoVo) {
-</strong>	
-	QUser user = QUser.user;
-	List&#x3C;User> userList =  new ArrayList&#x3C;User>();
-	BooleanBuilder builder = new BooleanBuilder(); // BooleanBuilder를 선언한다.
-	
-	// 검색 조건 1. userType : 사용자 / 관리자
-	if(userInfoVo.getUserType() != null ) {
-		// 검색 조건을 predicate 형식으로 만든 뒤 BooleanBuilder에 적용
-		builder.and(user.userType.equalsIgnoreCase(userInfoVo.getUserType().getCode()));
-	}
-	// 검색 조건 2. bizName : 사업장명
-	if(userInfoVo.getBizName() != null ) {
-		// 검색 조건을 predicate 형식으로 만든 뒤 BooleanBuilder에 적용
-		builder.and(user.bizName.containsIgnoreCase(userInfoVo.getBizName()));
-	}
-	
-	try {
-		// 완성된  BooleanBuilder를 Repository 매개변수 값으로 넣어준다.
-    		userList = ImmutableList.copyOf(userRepository.findAll(builder));
-    		return userList;
-	}
-	catch (Exception e) {
-		throw new RuntimeException(e);
+public class UserServiceImpl {
+//...
+<strong>	public List&#x3C;User> getUserList(UserInfoVo userInfoVo) {
+</strong>		
+		QUser user = QUser.user;
+		List&#x3C;User> userList =  new ArrayList&#x3C;User>();
+		BooleanBuilder builder = new BooleanBuilder(); // BooleanBuilder를 선언한다.
+		
+		// 검색 조건 1. userType : 사용자 / 관리자
+		if(userInfoVo.getUserType() != null ) {
+			// 검색 조건을 predicate 형식으로 만든 뒤 BooleanBuilder에 적용
+			builder.and(user.userType.equalsIgnoreCase(userInfoVo.getUserType().getCode()));
+		}
+		// 검색 조건 2. bizName : 사업장명
+		if(userInfoVo.getBizName() != null ) {
+			// 검색 조건을 predicate 형식으로 만든 뒤 BooleanBuilder에 적용
+			builder.and(user.bizName.containsIgnoreCase(userInfoVo.getBizName()));
+		}
+		
+		try {
+			// 완성된  BooleanBuilder를 Repository 매개변수 값으로 넣어준다.
+	    		userList = ImmutableList.copyOf(userRepository.findAll(builder));
+	    		return userList;
+		}
+		catch (Exception e) {
+			throw new RuntimeException(e);
+		}
 	}
 }</code></pre>
 

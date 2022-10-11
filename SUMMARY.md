@@ -1,8 +1,9 @@
 # Table of contents
 
-## JPA 프로그래밍
+## JPA 프로그래밍 <a href="#JPA 프로그래밍" id="JPA 프로그래밍"></a>
 
 * [1대 다 맵핑 관계 개념 및 구현하기](README.md)
+* [엔티티 상태와 Cascade](<JPA 프로그래밍/cascade.md>)
 
 ## 스프링 데이터 Common
 
@@ -20,7 +21,7 @@
 
 * [스프링 데이터 Common 8. QueryDSL 특징 , 연동하기](<스프링 데이터 Common 8. QueryDSL 특징 , 연동하기/README.md>)
   * [이클립스 , gradle 환경 내 QueryDSL 연동하기](<스프링 데이터 Common 8. QueryDSL 특징 , 연동하기/이클립스 , gradle 환경 내 QueryDSL 연동하기.md>)
-  * [스프링 데이터 Common 8. QueryDSL 기본 구현하기](<스프링 데이터 Common 8. QueryDSL 특징 , 연동하기/스프링 데이터 Common 8. QueryDSL 기본 구현하기.md>)
+  * [스프링 데이터 Common 8. QueryDSL 기본 구현하기](<스프링 데이터 Common 8. QueryDSL 특징 , 연동하기/common-8.-querydsl.md>)
   * [스프링 데이터 Common 8. QueryDSL 응용 구현하기(구버전)](<스프링 데이터 Common 8. QueryDSL 특징 , 연동하기/스프링 데이터 Common 8. QueryDSL 응용 구현하기(구버전).md>)
   * [스프링 데이터 Common 8. QueryDSL 응용 구현하기(신버전)](<스프링 데이터 Common 8. QueryDSL 특징 , 연동하기/스프링 데이터 Common 8. QueryDSL 응용 구현하기(신버전).md>)
   * [스프링 데이터 Common 8. Extension으로 QueryDSL 구현하기](<스프링 데이터 Common 8. QueryDSL 특징 , 연동하기/스프링 데이터 Common 8. Extension으로 QueryDSL 구현하기.md>)

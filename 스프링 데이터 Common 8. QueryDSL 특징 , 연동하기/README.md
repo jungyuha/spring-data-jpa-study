@@ -168,7 +168,7 @@ configurations {
   * ![](<../.gitbook/assets/image (6) (2).png>)
 * **target/generated-sources/java** 밑에 QAccount라는 **클래스가 자동생성**된다.\
   **이는 Account 엔티티에 대한 쿼리 Language를 만들어줄 것이다.**
-  * ![](<../.gitbook/assets/image (11) (5).png>)
+  * ![](<../.gitbook/assets/image (11) (5) (1).png>)
 
 ### 3) 자동생성된 클래스 테스트
 

@@ -60,7 +60,7 @@ description: 스프링 데이터 Common의 리포지토리 테스트 코드 만�
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (2) (1).png" alt=""><figcaption><p> pagingAndSortingRepository의 findAll (Pageable)</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p> findAll (Pageable) 테스트 코드</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption><p> findAll (Pageable) 테스트 코드</p></figcaption></figure>
 
 * 0 페이지부터 시작해서 10개씩 보여주는 코드이다.
 * 리턴 타입이 **리스트가 아닌 페이지로** 나온다. 따라서 페이지에 대한 여러가지 정보를 확인할 수 있다.

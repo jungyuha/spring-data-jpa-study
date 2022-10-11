@@ -137,7 +137,7 @@ List<Comment> findByCommentContains(String keyword);
 
 <figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption><p><strong>쿼리 메서드</strong> </p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption><p><strong>테스트</strong></p></figcaption></figure>
 
 **이 때 리스트에 값이 없는 경우 널이 나오지 않고 Empty로 나온다.**
 

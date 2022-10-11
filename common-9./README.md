@@ -19,7 +19,7 @@ description: 스프링 데이터 Common 9. 웹 기능 개요
 
 
 
-      <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (20) (3).png" alt=""><figcaption></figcaption></figure>
 *   @RequestHandler 메소드에서 Pageable과 Sort 를 매개변수로 직접 사용할 수 있다.
 
     <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>

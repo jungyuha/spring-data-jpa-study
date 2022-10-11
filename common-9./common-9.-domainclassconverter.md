@@ -21,7 +21,7 @@ description: '스프링 데이터 Common 9. 웹 기능 : DomainClassConverter'
 
 ### 1) 의존성 추가
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p> 간단한 의존성 추가</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (4).png" alt=""><figcaption><p> 간단한 의존성 추가</p></figcaption></figure>
 
 * **Spring JPA 추가** : spring-boot-starter-data-jpa
 * **Spring Web 추가** : spring-boot-starter-web
@@ -40,12 +40,12 @@ description: '스프링 데이터 Common 9. 웹 기능 : DomainClassConverter'
 
 #### 1. Post 조회 핸들러 생성
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. 레파지토리 선언&#x20;
 
 * 레파지토리 선언 방법 (1) : **Autowired 를 통한 주입**
-  * ![](<../.gitbook/assets/image (15).png>)
+  * ![](<../.gitbook/assets/image (15) (3).png>)
 *   레파지토리 선언 방법 (2) : **생성자를 통한 주입**
 
     <figure><img src="../.gitbook/assets/image (13) (4).png" alt=""><figcaption></figcaption></figure>
@@ -56,7 +56,7 @@ description: '스프링 데이터 Common 9. 웹 기능 : DomainClassConverter'
 
 새로 저장한 Post의 Id를 요청하여 **MockMvc**를 통해 해당 Post를 조회하는 테스트를 작성한다.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 ### 2) 테스트 결과
 
