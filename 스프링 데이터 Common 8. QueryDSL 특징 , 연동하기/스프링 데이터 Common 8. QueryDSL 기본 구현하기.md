@@ -10,7 +10,7 @@ description: 기본 리포지토리 커스터마이징 안 하고 기본 JpaRepo
 
 **first registered : 2022-09-28 Wed**
 
-**last modified : 2022-09-29 Thu**
+**last modified : 2022-10-11 Tue**
 
 ## \[1] 레파지토리에 **QuerydslPredicateExecutor 추가**
 
@@ -122,7 +122,7 @@ public List<User> getUserList(UserInfoVo userInfoVo) {
 
 <pre class="language-java"><code class="lang-java">import com.google.common.collect.ImmutableList;
 import com.querydsl.core.BooleanBuilder;
-...
+//...
 <strong>
 </strong><strong>public List&#x3C;User> getUserList(UserInfoVo userInfoVo) {
 </strong>	
