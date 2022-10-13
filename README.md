@@ -129,7 +129,7 @@ description: '관계 설정하기 : 1대 다 맵핑'
 
 <figure><img src=".gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 3) 양방향 관계의 특징과 주의해야할점
 

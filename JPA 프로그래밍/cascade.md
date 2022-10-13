@@ -57,7 +57,7 @@ hibernate에서 가장 중요한 **엔티티 상태를 전이**시키는 **casca
 * 해당 엔티티들은 데이터베이스에 맵핑되어있는 상태가 **아니다**.
 * **즉 , 이 객체들은 데이터베이스에 반영이 될지 말지 아직 확정이 되지 않은 객체들이다.**
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Persistent 상태
 

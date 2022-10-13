@@ -55,6 +55,6 @@ description: 스프링 데이터 Common이 제공하는 Repository 살펴보기
   * 즉 , 실제 레파지토리가 아님을 표시하기 위한 수단인 것이다.
   *   따라서 중간단계의 레파지토리에는 모두 @NoRepositoryBean 어노테이션이 달려있다.
 
-      <figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p> NoRepositoryBean 어노테이션이 달려있는 JpaRepository</p></figcaption></figure>
+      <figure><img src=".gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p> NoRepositoryBean 어노테이션이 달려있는 JpaRepository</p></figcaption></figure>
 
       <figure><img src=".gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p> @NoRepositoryBean 어노테이션이 달려있는 PagingAndSortingRepository</p></figcaption></figure>
