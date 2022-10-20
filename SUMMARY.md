@@ -39,3 +39,4 @@
 * [JPA Top1 쿼리 구현하는 2가지 방법](etc/jpa-top1-2.md)
 * [JPA 쿼리 로그 설정하는 법](etc/jpa.md)
 * [Iterable 형식 변환하기](etc/iterable.md)
+* [상속 관계 매핑 전략 구현하기 (미완성)](etc/undefined.md)
