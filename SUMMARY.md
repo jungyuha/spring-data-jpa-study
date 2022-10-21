@@ -30,7 +30,8 @@
 
 ## 객체 맵핑 방법 <a href="#객체 맵핑 방법" id="객체 맵핑 방법"></a>
 
-* [ModelMapper 개념과 사용방법](<객체 맵핑 방법/ModelMapper 개념과 사용방법.md>)
+* [ModelMapper 개념과 사용방법](<객체 맵핑 방법/ModelMapper 개념과 사용방법/README.md>)
+  * [ModelMapper로 List바인딩 하기](<객체 맵핑 방법/ModelMapper 개념과 사용방법/modelmapper-list.md>)
 * [MapStruct의 개념과 사용법](<객체 맵핑 방법/MapStruct의 개념과 사용법.md>)
 
 ## etc
