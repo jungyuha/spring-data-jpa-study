@@ -27,7 +27,6 @@ List<BB> bList = new ArrayList<BB>();
 ### (2) 리스트 바인딩
 
 ```java
-// Some codeavav
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 
@@ -35,7 +34,7 @@ ModelMapper modelMapper = new ModelMapper();
 modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STANDARD);
 
 // 리스트 바인딩
-bList = modelMapper.map(aList, new TypeToken<List<BB>>() {}.getType())
+bList = modelMapper.map(aList, new TypeToken<List<BB>>() {}.getType());
 
 ```
 
