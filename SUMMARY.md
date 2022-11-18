@@ -43,3 +43,4 @@
 * [Iterable 형식 변환하기](etc/iterable.md)
 * [상속 관계 매핑 전략 구현하기 (미완성)](etc/undefined.md)
 * [\[Pageable\] 페이징 처리하기](etc/pageable.md)
+* [\[날짜조회\]yyyy-MM-dd 형태의 날짜 조회하기](etc/yyyy-mm-dd.md)
