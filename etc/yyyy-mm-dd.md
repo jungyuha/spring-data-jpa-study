@@ -31,3 +31,35 @@ if (!Strings.isNullOrEmpty(start_dt) && )!Strings.isNullOrEmpty(end_dt) {
 
 ```
 
+### 3) 날짜 타입 parser 만들기 (string => LocalDateTime)
+
+#### 1. Parser 생성하기
+
+```java
+@Getter
+public class LocalDateParser {
+    private LocalDate searchParamDt;
+
+    public LocalDateParser(String currentDate) {
+        this.searchParamDt = LocalDate.parse(currentDate, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+    }
+
+    // 해당날짜의 시작시간(ex:2022-11-18 00:00:00)
+    public LocalDateTime startDate() {
+        return this.searchParamDt.atStartOfDay();
+    }
+
+    // 해당날짜의 끝 시간(ex:2022-11-18 23:59:59)
+    public LocalDateTime endDate() {
+	return LocalDateTime.of(this.searchParamDt, LocalTime.of(23,59,59));
+    }
+}
+```
+
+#### 2. Parser 이용하기
+
+```java
+LocalDateParser localDateParser = new LocalDateParser("2022-11-18");
+
+builder.and(qTest.registerdTime.between(localDateParser.startDate(), localDateParser.endDate()));
+```
