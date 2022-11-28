@@ -63,3 +63,14 @@ LocalDateParser localDateParser = new LocalDateParser("2022-11-18");
 
 builder.and(qTest.registerdTime.between(localDateParser.startDate(), localDateParser.endDate()));
 ```
+
+### 4) String 타입 yyyy-MM-dd HH:mm:ss:SSS 만들기 (LocalDateTime => string)
+
+#### 1.변환하기
+
+```java
+LocalDateTime pharmMdcnCpltDttm ; // 2022-11-25T15:01:56
+String pharmMdcnCpltDttmDesc = pharmMdcnCpltDttm.format(
+                DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
+    	        ); //2022-11-25 15:01:56
+```
